@@ -19,6 +19,20 @@ public class StringNode: CustomStringConvertible {
         self.key = key
     }
 
+    public func swiftCode() -> String {
+        if let value = value {
+            return "\tlet \(key) = \"\(value)\"\n"
+        }
+
+        var result = "struct \(key) {\n"
+        for reference in references {
+            result += "\t\(reference.value.swiftCode())"
+        }
+        result += "}\n"
+
+        return result
+    }
+
     public var description: String {
         if let value = value {
             return " = \(value)"

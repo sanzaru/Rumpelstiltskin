@@ -1,0 +1,6 @@
+framework module Rumpelstiltskin {
+  umbrella header "Rumpelstiltskin-umbrella.h"
+
+  export *
+  module * { export * }
+}

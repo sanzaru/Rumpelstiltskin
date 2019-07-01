@@ -38,27 +38,27 @@
 
 /* Begin PBXFileReference section */
 		1799B3F88423DC30AC7C367D9E112270 /* Pods-Rumpelstiltskin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rumpelstiltskin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rumpelstiltskin.framework; path = Rumpelstiltskin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rumpelstiltskin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-umbrella.h"; sourceTree = "<group>"; };
 		3B6BC0E5B314B07BFDB483F8FA303660 /* Rumpelstiltskin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rumpelstiltskin-Info.plist"; sourceTree = "<group>"; };
 		3C141869FD1B53476A2DDE1500A35B27 /* Pods-Rumpelstiltskin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rumpelstiltskin_Tests.modulemap"; sourceTree = "<group>"; };
 		3CE1C8C1A166839067E3DB1CC1CF6D03 /* Pods-Rumpelstiltskin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Example-Info.plist"; sourceTree = "<group>"; };
 		4E227986B78678AFECE0DB2B99B67212 /* Pods-Rumpelstiltskin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4FDBBA63CF2504EAEDDD22A8A7225ACD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		53B754AA7E8678E888C175C9F04DDE89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4FDBBA63CF2504EAEDDD22A8A7225ACD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		53B754AA7E8678E888C175C9F04DDE89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5BCA828B648A6CFD8C1EA66AA7BFDE21 /* Pods-Rumpelstiltskin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C2930BD8E17FA563A596B1638A52B90 /* Pods-Rumpelstiltskin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rumpelstiltskin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C98DBD2CE1DC2117326B18EB665F592 /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rumpelstiltskin_Example.framework; path = "Pods-Rumpelstiltskin_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C404FB4C57DA5191879D9262500A1DC /* Pods_Rumpelstiltskin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Rumpelstiltskin_Tests.framework; path = "Pods-Rumpelstiltskin_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C98DBD2CE1DC2117326B18EB665F592 /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C404FB4C57DA5191879D9262500A1DC /* Pods_Rumpelstiltskin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAB31BE29F5A32F41CDDB4694D3B7A4 /* Rumpelstiltskin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-prefix.pch"; sourceTree = "<group>"; };
 		725B1B2F83B387848734293EEEA21BC5 /* Pods-Rumpelstiltskin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rumpelstiltskin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rumpelstiltskin.xcconfig; sourceTree = "<group>"; };
 		87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Example-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3C80664FD874A4C0151F721477D01F /* Pods-Rumpelstiltskin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1DA24A1D610C7C5B0706D71FD98B66B /* Rumpelstiltskin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rumpelstiltskin.modulemap; sourceTree = "<group>"; };
-		AFF1B41828257B5DA2D5D00E32A45ED3 /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Rumpelstiltskin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFF1B41828257B5DA2D5D00E32A45ED3 /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Rumpelstiltskin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B76CA31D9010ED8B536F07BD5E182D49 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Rumpelstiltskin/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -315,6 +315,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					8D678D18FB446A9CFD553723A3D57013 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -527,7 +532,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -588,8 +593,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -717,7 +721,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

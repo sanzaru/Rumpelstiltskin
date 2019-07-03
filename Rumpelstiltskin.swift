@@ -8,7 +8,87 @@
 import Foundation
 
 typealias NodeKey = String
-typealias NodeValue = String
+public typealias NodeValue = String
+
+public protocol ValueBuilder {
+    var pattern: String { get }
+    func build(for value: NodeValue) -> String
+}
+
+public struct StringValueBuilder: ValueBuilder {
+    public var pattern = "NSLocalizedString(\"{{value}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")"
+
+
+    public func build(for value: NodeValue) -> String {
+        return pattern.replacingOccurrences(of: "{{value}}", with: value)
+    }
+}
+
+public struct FunctionValueBuilder: ValueBuilder {
+    public var pattern =  """
+public static func NotificationWithFailures({{functionParams}}) -> String {
+        return String(format: {{stringValueBuilder}}, {{formatParams}})
+    }
+"""
+
+    public func build(for value: NodeValue) -> String {
+        let parameters = createFunctionParameters(fromFormatParameters: formatPlaceholders(from: value))
+
+        let functionParams = parameters.map { nameAndType in
+            return "\(nameAndType.name): \(nameAndType.type)"
+            }.joined(separator: ",")
+
+        let formatParams = parameters.map { nameAndType in
+            return nameAndType.name
+            }.joined(separator: ",")
+
+        var result = pattern
+            .replacingOccurrences(
+                of: "{{stringValueBuilder}}",
+                with: Rumpelstiltskin.stringValueBuilder.build(for: value))
+            .replacingOccurrences(of: "{{functionParams}}", with: functionParams)
+            .replacingOccurrences(of: "{{formatParams}}", with: formatParams)
+
+        return result
+    }
+
+    func formatPlaceholders(from string: String) -> [String] {
+        let regex = try? NSRegularExpression(pattern: "#%[@df]", options: [])
+        let results = regex?.matches(
+            in: string,
+            options: [],
+            range: NSRange(string.startIndex..., in: string))
+
+        let formatPlaceholders: [String] = results?.compactMap { result in
+            guard let range = Range(result.range, in: string) else { return nil }
+            return String(string[range])
+        } ?? [String]()
+
+        return formatPlaceholders
+    }
+
+    func createFunctionParameters(fromFormatParameters formatParameters: [String]) -> [(name: String, type: String)] {
+
+        var result = [(String, String)]()
+        for (index, formatParameter) in formatParameters.enumerated() {
+            var type = ""
+            switch formatParameter {
+            case "%@":
+                type = "String"
+            case "%d":
+                type = "Int"
+            case "%f":
+                type = "Float"
+            default:
+                continue
+            }
+
+            result.append(("value\(index)", type))
+        }
+
+        return result
+    }
+}
 
 public class StringNode: CustomStringConvertible {
     let key: NodeKey
@@ -19,16 +99,16 @@ public class StringNode: CustomStringConvertible {
         self.key = key
     }
 
-    public func swiftCode() -> String {
+    public func swiftCode(indentation: Int = 0) -> String {
         if let value = value {
-            return "\tlet \(key) = \"\(value)\"\n"
+            return "let \(key) = \"\(value)\"\n"
         }
 
         var result = "struct \(key) {\n"
         for reference in references {
-            result += "\t\(reference.value.swiftCode())"
+            result += "\(String(repeating: "\t", count: indentation + 1))\(reference.value.swiftCode(indentation: indentation + 1))"
         }
-        result += "}\n"
+        result += "\(String(repeating: "\t", count: indentation))}\n"
 
         return result
     }
@@ -45,10 +125,11 @@ public class StringNode: CustomStringConvertible {
 
         return result
     }
-
 }
 
 public class Rumpelstiltskin {
+    public static let stringValueBuilder = StringValueBuilder()
+
     public static func extractStructure(from content: String) -> StringNode {
         let lines = content.components(separatedBy: "\n")
         let structure = StringNode(with: "Localization")
@@ -75,6 +156,8 @@ public class Rumpelstiltskin {
 
     static func extractComponents(fromLine line: String) -> (hirarchie: [String], value: String) {
         let parts = line
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .dropLast()
             .replacingOccurrences(of: "\"", with: "")
             .replacingOccurrences(of: ";", with: "")
             .split(separator: "=")

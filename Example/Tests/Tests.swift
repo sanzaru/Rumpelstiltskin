@@ -18,15 +18,26 @@ let testData = """
 "Document.Record.IssuingState" = "Issuing state";
 "Document.Record.PrimaryIdentifier" = "Surname";
 "Document.Record.SecondaryIdentifier" = "Given name";
+"Document.Record.Function" = "Given name %d";
 """
 
 class TableOfContentsSpec: XCTestCase {
     override func setUp() {
     }
 
-    func testStringParsing() {
+    func testSwiftCodeGen() {
         let result = Rumpelstiltskin.extractStructure(from: testData)
         let code = result.swiftCode()
         print(code)
+    }
+
+    func testFunctionParsing() {
+        let function = Rumpelstiltskin.functionValueBuilder.build(for: "Document.Function.Test", value: "%d Test %@ %f")
+
+        print(function)
+    }
+
+    func testIfFunctionParsingApplies() {
+       XCTAssertTrue(Rumpelstiltskin.functionValueBuilder.applies(to: "Hallo %d"))
     }
 }

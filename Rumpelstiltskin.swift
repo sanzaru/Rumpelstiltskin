@@ -7,53 +7,74 @@
 
 import Foundation
 
-typealias NodeKey = String
+public typealias NodeKey = String
 public typealias NodeValue = String
 
 public protocol ValueBuilder {
-    var pattern: String { get }
-    func build(for value: NodeValue) -> String
+    var definitionPattern: String { get }
+    var valuePattern: String { get }
+    func build(for key: NodeKey, value: NodeValue) -> (definition: String, value: String)
+    func applies(to value: NodeValue) -> Bool
 }
 
 public struct StringValueBuilder: ValueBuilder {
-    public var pattern = "NSLocalizedString(\"{{value}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")"
+
+    public let definitionPattern: String = "public static let {{variableName}} = "
+    public let valuePattern: String = "NSLocalizedString(\"{{key}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")\n"
 
 
-    public func build(for value: NodeValue) -> String {
-        return pattern.replacingOccurrences(of: "{{value}}", with: value)
+    public func build(for key: NodeKey, value: NodeValue) -> (definition: String, value: String) {
+        let variableName = key.split(separator: ".").last!
+        return (
+            definitionPattern
+                .replacingOccurrences(of: "{{variableName}}", with: variableName),
+            valuePattern
+                .replacingOccurrences(of: "{{key}}", with: key))
+    }
+
+    public func applies(to value: NodeValue) -> Bool {
+        return true
     }
 }
 
 public struct FunctionValueBuilder: ValueBuilder {
-    public var pattern =  """
-public static func NotificationWithFailures({{functionParams}}) -> String {
+    public var definitionPattern: String = "public static func {{functionName}}({{functionParams}}) -> String "
+    public var valuePattern: String =  """
+    {
         return String(format: {{stringValueBuilder}}, {{formatParams}})
-    }
+    }\n
 """
 
-    public func build(for value: NodeValue) -> String {
+    public func build(for key: NodeKey, value: NodeValue) -> (definition: String, value: String) {
+        let functionName = key.split(separator: ".").last!
         let parameters = createFunctionParameters(fromFormatParameters: formatPlaceholders(from: value))
 
         let functionParams = parameters.map { nameAndType in
             return "\(nameAndType.name): \(nameAndType.type)"
-            }.joined(separator: ",")
+            }.joined(separator: ", ")
 
         let formatParams = parameters.map { nameAndType in
             return nameAndType.name
-            }.joined(separator: ",")
+            }.joined(separator: ", ")
 
-        var result = pattern
-            .replacingOccurrences(
-                of: "{{stringValueBuilder}}",
-                with: Rumpelstiltskin.stringValueBuilder.build(for: value))
-            .replacingOccurrences(of: "{{functionParams}}", with: functionParams)
-            .replacingOccurrences(of: "{{formatParams}}", with: formatParams)
+        return (
+            definitionPattern
+                .replacingOccurrences(of: "{{functionName}}", with: functionName)
+                .replacingOccurrences(of: "{{functionParams}}", with: functionParams),
+            valuePattern
+                .replacingOccurrences(
+                    of: "{{stringValueBuilder}}",
+                    with: Rumpelstiltskin.stringValueBuilder.build(for: key, value: value).value)
+             .replacingOccurrences(of: "{{formatParams}}", with: formatParams)
+        )
+    }
 
-        return result
+    public func applies(to value: NodeValue) -> Bool {
+        return value.range(of: #"%[@df]"#, options: .regularExpression) != nil
     }
 
     func formatPlaceholders(from string: String) -> [String] {
-        let regex = try? NSRegularExpression(pattern: "#%[@df]", options: [])
+        let regex = try? NSRegularExpression(pattern: #"%[@df]"#, options: [])
         let results = regex?.matches(
             in: string,
             options: [],
@@ -90,38 +111,37 @@ public static func NotificationWithFailures({{functionParams}}) -> String {
     }
 }
 
-public class StringNode: CustomStringConvertible {
+public class StringNode {
     let key: NodeKey
     var value: NodeValue?
     var references = [NodeValue: StringNode]()
+
+    public var valueBuilderInOrderOfAppliance: [ValueBuilder] = [
+        Rumpelstiltskin.functionValueBuilder,
+        Rumpelstiltskin.stringValueBuilder]
 
     init(with key: NodeKey) {
         self.key = key
     }
 
-    public func swiftCode(indentation: Int = 0) -> String {
+    public func swiftCode(indentation: Int = 0, combinedKey: String = "") -> String {
+        var tempCombinedKey = combinedKey
+        tempCombinedKey.append("\(key).")
         if let value = value {
-            return "let \(key) = \"\(value)\"\n"
+            for valueBuilder in valueBuilderInOrderOfAppliance {
+                if valueBuilder.applies(to: value) {
+                    let definitionAndValue = valueBuilder.build(for: tempCombinedKey, value: value)
+                    return "\(definitionAndValue.definition)\(definitionAndValue.value)"
+                }
+            }
+            return "No ValueBuilder Applied"
         }
 
         var result = "struct \(key) {\n"
         for reference in references {
-            result += "\(String(repeating: "\t", count: indentation + 1))\(reference.value.swiftCode(indentation: indentation + 1))"
+            result += "\(String(repeating: "\t", count: indentation + 1))\(reference.value.swiftCode(indentation: indentation + 1, combinedKey: tempCombinedKey))"
         }
         result += "\(String(repeating: "\t", count: indentation))}\n"
-
-        return result
-    }
-
-    public var description: String {
-        if let value = value {
-            return " = \(value)"
-        }
-        var result = "\(key)"
-        for reference in references {
-            result += "-> \(reference.value)"
-            result += "\n"
-        }
 
         return result
     }
@@ -129,6 +149,7 @@ public class StringNode: CustomStringConvertible {
 
 public class Rumpelstiltskin {
     public static let stringValueBuilder = StringValueBuilder()
+    public static let functionValueBuilder = FunctionValueBuilder()
 
     public static func extractStructure(from content: String) -> StringNode {
         let lines = content.components(separatedBy: "\n")

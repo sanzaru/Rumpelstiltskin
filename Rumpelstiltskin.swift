@@ -18,7 +18,6 @@ public protocol ValueBuilder {
 }
 
 public struct StringValueBuilder: ValueBuilder {
-
     public let definitionPattern: String = "public static let {{variableName}} = "
     public let valuePattern: String = "NSLocalizedString(\"{{key}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")\n"
 
@@ -38,20 +37,23 @@ public struct StringValueBuilder: ValueBuilder {
 }
 
 public struct FunctionValueBuilder: ValueBuilder {
-    public var definitionPattern: String = "public static func {{functionName}}({{functionParams}}) -> String "
+    public var definitionPattern: String = "public static func {{functionName}}({{functionParams}}) -> String"
     public var valuePattern: String =  """
-    {
-        return String(format: {{stringValueBuilder}}, {{formatParams}})
-    }\n
+ {
+return String(format: {{stringValueBuilder}}, {{formatParams}})
+}\n
 """
 
     public func build(for key: NodeKey, value: NodeValue) -> (definition: String, value: String) {
         let functionName = key.split(separator: ".").last!
         let parameters = createFunctionParameters(fromFormatParameters: formatPlaceholders(from: value))
 
-        let functionParams = parameters.map { nameAndType in
-            return "\(nameAndType.name): \(nameAndType.type)"
-            }.joined(separator: ", ")
+        var functionParams = [String]()
+        for (index, nameAndType) in parameters.enumerated() {
+            functionParams.append(index == 0 ?
+                "\(nameAndType.name): \(nameAndType.type)" :
+             "_ \(nameAndType.name): \(nameAndType.type)")
+        }
 
         let formatParams = parameters.map { nameAndType in
             return nameAndType.name
@@ -60,7 +62,7 @@ public struct FunctionValueBuilder: ValueBuilder {
         return (
             definitionPattern
                 .replacingOccurrences(of: "{{functionName}}", with: functionName)
-                .replacingOccurrences(of: "{{functionParams}}", with: functionParams),
+                .replacingOccurrences(of: "{{functionParams}}", with: functionParams.joined(separator: ", ")),
             valuePattern
                 .replacingOccurrences(
                     of: "{{stringValueBuilder}}",
@@ -104,10 +106,50 @@ public struct FunctionValueBuilder: ValueBuilder {
                 continue
             }
 
-            result.append(("value\(index)", type))
+            result.append(("value\(index + 1)", type))
         }
 
         return result
+    }
+}
+
+public enum IndentationType {
+    case spaces(tabSize: Int)
+    case tabs
+
+    fileprivate var string: String {
+        switch self {
+        case .spaces(let tabSize):
+            return String(repeating: " ", count: tabSize)
+        case .tabs:
+            return "\t"
+        }
+    }
+}
+
+public struct Indentation {
+    let indentationType: IndentationType
+
+    public init(indentationType: IndentationType) {
+        self.indentationType = indentationType
+    }
+
+    public func indent(_ value: String) -> String {
+        let lines = value.split(separator: "\n")
+
+        var result = [String]()
+        var indentationLevel = 0
+        for line in lines {
+            if line.contains("}") {
+                indentationLevel -= 1
+            }
+            result.append("\(String(repeating: indentationType.string, count: indentationLevel))\(line)")
+            if line.contains("{") {
+                indentationLevel += 1
+            }
+        }
+
+        return result.joined(separator: "\n")
     }
 }
 
@@ -124,7 +166,7 @@ public class StringNode {
         self.key = key
     }
 
-    public func swiftCode(indentation: Int = 0, combinedKey: String = "") -> String {
+    public func swiftCode(combinedKey: String = "") -> String {
         var tempCombinedKey = combinedKey
         tempCombinedKey.append("\(key).")
         if let value = value {
@@ -139,9 +181,9 @@ public class StringNode {
 
         var result = "struct \(key) {\n"
         for reference in references {
-            result += "\(String(repeating: "\t", count: indentation + 1))\(reference.value.swiftCode(indentation: indentation + 1, combinedKey: tempCombinedKey))"
+            result += reference.value.swiftCode(combinedKey: tempCombinedKey)
         }
-        result += "\(String(repeating: "\t", count: indentation))}\n"
+        result += "}\n"
 
         return result
     }
@@ -155,7 +197,21 @@ public class Rumpelstiltskin {
         let lines = content.components(separatedBy: "\n")
         let structure = StringNode(with: "Localization")
 
+        var lineInBlockComment = false
         for line in lines {
+            // Ignore comments
+            if line.starts(with: "/*") {
+                lineInBlockComment = true
+            }
+            if line.contains("*/") {
+                lineInBlockComment = false
+                continue
+            }
+            if line.starts(with: "//")
+                || lineInBlockComment
+                || line.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                continue
+            }
             let components = extractComponents(fromLine: line)
             var currentNode = structure
 

@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7CF3D4026A836D4175F6207E /* Pods_Rumpelstiltskin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F324B4F7B2E082988DBEEBA /* Pods_Rumpelstiltskin_Tests.framework */; };
+		9538FCB422CE4816009AA948 /* Strings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9538FCB222CE4813009AA948 /* Strings.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		842486E9823D3D135E7E03FD /* Pods-Rumpelstiltskin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumpelstiltskin_Example.release.xcconfig"; path = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8922D44248DF72F95DB858DA /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3864EBB9464F081BB49F5E /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Rumpelstiltskin.podspec; path = ../Rumpelstiltskin.podspec; sourceTree = "<group>"; };
+		9538FCB222CE4813009AA948 /* Strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Strings.txt; sourceTree = "<group>"; };
 		A25CDD13FC6ED7CAAD96256E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEA1AFB9204008FA782 /* Info.plist */,
+				9538FCB222CE4813009AA948 /* Strings.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9538FCB422CE4816009AA948 /* Strings.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

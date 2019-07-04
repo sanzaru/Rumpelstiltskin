@@ -1,0 +1,182 @@
+
+/*
+Localizable.strings
+kta-kinegram-digital-seal-ios
+
+Created by Andrey Gershengoren on 06.04.17.
+Copyright © 2017 KURZ Digital Solutions GmbH & Co. KG. All rights reserved.
+*/
+
+/* General */
+"Application.Version" = "Version: %@";
+
+/* Buttons */
+"Buttons.ScanQr" = "Scan code";
+"Buttons.ScanMrz" = "Scan mrz";
+"Buttons.SelectDocument" = "Select document";
+"Buttons.Login" = "Login";
+"Buttons.Ok" = "Ok";
+"Buttons.Cancel" = "Cancel";
+"Buttons.Install" = "Install";
+"Buttons.Back" = "Back";
+"Buttons.Send" = "Send";
+"Buttons.NoThanks" = "No, thanks";
+"Buttons.RetryPhoto" = "Retake Photo";
+"Buttons.OpenAppStore" = "Open  in  AppStore";
+"Buttons.UseBestPhoto" = "Use best Photo";
+
+/* General Accessibility */
+"Accessibility.DigitalSealLogo" = "Digital Seal Logo";
+"Accessibility.Button" = "Button %@";
+"Accessibility.Image" = "Image %@";
+"Accessibility.ThumbnailImage" = "Thumbnail %d";
+"Accessibility.Preview" = "Preview %d";
+"Accessibility.Buttons.CameraShutter" = "Camera Shutter Button";
+
+"Accessibility.Values.Info" = "info";
+"Accessibility.Values.LiteBadge" = "lite badge";
+"Accessibility.Buttons.PromoteView" = "Buy DS PRO";
+
+/* Scenes */
+/* ------ */
+
+/* Menu */
+"Menu.Toast.Preparing" = "Preparing to download %d documents…";
+"Menu.Toast.Downloading" = "Downloading. %d documents remaining…";
+"Menu.Toast.Complete" = "Download complete";
+"Menu.Toast.CompleteWithFailed" = "Download complete with %d document failed to download.";
+"Menu.Toast.Waiting" = "Waiting for WiFi connection";
+"Menu.DownloadDialog.Title" = "Download via cellular network?";
+"Menu.DownloadDialog.Message" = "The application is about to download significant amount of data (>400 MB). Do you want to download it while you are connected to cellular network?\n\nYour decision can be changed in the app settings.";
+"Menu.DownloadDialog.Buttons.OnlyWiFi" = "Use WiFi only";
+"Menu.DownloadDialog.Buttons.Both" = "Use cellular network";
+
+/* Login */
+"Login.Username" = "Username";
+"Login.Password" = "Password";
+
+/* Select document */
+"SelectDocument.Title" = "Select document";
+"SelectDocument.Favorites" = "Favorites";
+"SelectDocument.MyVideos" = "Documents";
+"SelectDocument.Search.PlaceHolder" = "Search Term";
+"SelectDocument.EmptyTable.Favorites" = "No favorites selected. Please select from documents.";
+"SelectDocument.EmptyTable.MyVideos" = "No available documents found.";
+"SelectDocument.InstallProAlert.Title" = "Document not avaliable";
+"SelectDocument.InstallProAlert.Message" = "Sorry, this document is available in full version.";
+"SelectDocument.InstallProHint" = "Documents in greyed out text only available in Digital Seal PRO app. TOUCH HERE for more information.";
+"SelectDocument.InstallProHintBoldText" = "TOUCH HERE";
+
+/* Check Data */
+"CheckData.Title" = "Check data";
+"CheckData.ToolBar.VideoInspectKinegram" = "Inspect Kinegram";
+"CheckData.ToolBar.VideoInspectDocument" = "Inspect Document";
+"CheckData.ToolBar.LightOn" = "Light On";
+"CheckData.ToolBar.LightOff" = "Light Off";
+"CheckData.ToolBar.OnlineCheck" = "Online Check";
+"CheckData.ToolBar.ShowPDF417" = "Show PDF417 Information";
+"CheckData.ToolBar.FaceRecognition" = "Scan Photo";
+"CheckData.MultipleDocuments.Title" = "Multiple documents found";
+"CheckData.MultipleDocuments.Message" = "Please select a document";
+
+/* Document details */
+"DocumentDetails.Title" = "Check data";
+"DocumentDetails.FavoriteButton.Add" = "Add to favorites";
+"DocumentDetails.FavoriteButton.Remove" = "Remove from favorites";
+
+/* Scan QR */
+"ScanQrCode.Title" = "Scan Code";
+"ScanQrCode.DeviceOrientationHint" = "Turn your device to landscape mode to improve detection of long barcodes.";
+
+/* Scan MRZ */
+"ScanMrz.Title" = "Scan MRZ";
+"ScanMrz.OrientationHint" = "Please focus on MRZ (Machine Readable Zone)";
+
+/* Face Recognition */
+"FaceRecognition.Title" = "Photo on Passport";
+"FaceRecognition.ScanningHint" = "Please focus to the photo on the passport and adjust distance and lightning conditions to get a quality > 50%.";
+
+/* Face Recognition Check Photo */
+"CheckFace.Title" = "Check Photo";
+"CheckFace.ToolBar.ScanFace" = "Scan Face";
+"CheckFace.TopInfo.Hint" = "Please check if the photo is sharp and clearly visible. To proceed with face verification tap 'Scan Face'";
+
+/* Face Verification */
+"FaceVerification.Title" = "Face Verification";
+"FaceVerification.ScanningHint" = "Please focus to the person's face to verify.";
+
+/* Info List */
+"InfoList.Title" = "Info";
+"InfoList.InfoItemType.DemoVideo" = "Demo Video";
+"InfoList.InfoItemType.Terms" = "Terms of Use";
+"InfoList.InfoItemType.Disclaimer" = "Disclaimer";
+"InfoList.InfoItemType.Imprint" = "Imprint";
+"InfoList.InfoItemType.Privacy" = "Privacy Notice";
+"InfoList.InfoItemType.FAQ" = "FAQ";
+"InfoList.InfoItemType.OpenSource" = "Open Source Agreements";
+"InfoList.InfoItemType.Contact" = "Contact Us";
+"InfoList.InfoItemType.VisitKinegram" = "Visit Kinegram.com";
+"InfoList.InfoItemType.VisitDsProWebsite" = "Digital Seal PRO Features";
+"InfoList.InfoItemType.AppSettings" = "App Settings";
+
+/* Promote View */
+"Promote.Title" = "Digital Seal PRO";
+"Promote.MainText" = "Thank you for your interest in the Digital Seal PRO version!";
+"Promote.SubTitle" = "This version has been designed for professional document inspectors and other experts in lawenforcement.\n\nWith a quick and easy scan of the machine-readable zone of a passport or ID the Digital Seal Pro version displays an official sample of the data page corresponding to that document. While the free version contains only documents with Kinegram security features, the Pro version also includes documents with other security features.\n\nThe app contains photos and/or videos of passport data pages from over 60 different countries, representing more than 80% of all passports in circulation. Barcode reading and chip inspection functions are also included.\n\nA more advanced Digital Seal Enterprise version which includes full chip authentication, verification of country signing certificates and face recognition is also available.";
+"Promote.UrlToEnterprise" = "TOUCH HERE for more information.";
+
+/* PDF417 Information */
+"PDF417Information.Title" = "PDF417 Information";
+
+/* Error Titles */
+"ErrorTitles.Warning" = "Warning";
+
+/* Error messages */
+"ErrorMessages.EmptyCredentials" = "Fields empty. Please fill out all required fields.";
+"ErrorMessages.WrongCredentials" = "Wrong credentials. Please try again.";
+"ErrorMessages.NoConnection" = "Cannot connect to server. Are you offline?";
+"ErrorMessages.UnknownError" = "An unknown error has occurred";
+"ErrorMessages.NoFlash" = "Unable to access camera flash";
+"ErrorMessages.ScanCode.Unknown" = "Unknown document code";
+"ErrorMessages.ScanCode.ExpiredDocument" = "The document is expired";
+"ErrorMessages.ScanCode.WrongChecksum.Message" = "Wrong %@ checksum";
+"ErrorMessages.ScanCode.WrongChecksum.DocumentNumber" = "document number";
+"ErrorMessages.ScanCode.WrongChecksum.DateOfBirth" = "date of birth";
+"ErrorMessages.ScanCode.WrongChecksum.DateOfExpiry" = "date of expiry";
+"ErrorMessages.ScanCode.WrongChecksum.PersonalNumber" = "personal number";
+"ErrorMessages.ScanCode.WrongChecksum.Composite" = "personal number";
+"ErrorMessages.Camera.AccessDenied" = "Camera access denied. Please enable access in settings.";
+"ErrorMessages.Camera.AccessRestricted" = "Camera access restricted. Please enable access in settings.";
+"ErrorMessages.Camera.NotAvailable" = "Camera is not available.";
+"ErrorMessages.UserProfile.NetworkError" = "Unable to finish the request. Please try again.";
+"ErrorMessages.UserProfile.ValidationError" = "Please fill all required fields.";
+"ErrorMessages.CheckData.NotDownloaded" = "Sorry, this document has not been downloaded yet. Please try again later.";
+"ErrorMessages.Documents.NotDownloaded" = "This document has not been downloaded yet.";
+"ErrorMessages.Documents.NotAvailableInFreeVersion" = "This document is not available in the free version. Please use Digital Seal PRO app.";
+"ErrorMessages.FaceRecognition.SDKError" = "There is a problem with FaceRecognition SDK. Please check for valid licence.";
+
+/* MRZ Document Records */
+"Document.Record.DocumentNumber" = "Document number";
+"Document.Record.DocumentCode" = "Document code";
+"Document.Record.Surname" = "Surname";
+"Document.Record.GivenNames" = "Given names";
+"Document.Record.Gender" = "Gender";
+"Document.Record.DateOfBirth" = "Date of birth";
+"Document.Record.DateOfExpiry" = "Date of expiry";
+"Document.Record.Nationality" = "Nationality";
+"Document.Record.IssuingState" = "Issuing state";
+"Document.Record.PrimaryIdentifier" = "Surname";
+"Document.Record.SecondaryIdentifier" = "Given name";
+"Document.Record.DateOfIssue" = "Date of issue";
+"Document.Record.Country" = "Country";
+"Document.Record.State" = "State";
+"Document.Record.EyesColor" = "Eye color";
+"Document.Record.BodyHeight" = "Height";
+"Document.Record.City" = "City";
+"Document.Record.Street" = "Street";
+"Document.Record.Jurisdiction" = "Jurisdiction";
+"Document.Record.PostalCode" = "Postal code";
+
+/* Download Manager */
+"DownloadManager.Notification" = "All documents were downloaded.";
+"DownloadManager.NotificationWithFailures" = "%d of %d documents were downloaded. Failed downloads will be processed when you open the app.";

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150CFA80F7F03894FC3A3E3D77D25EA1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76CA31D9010ED8B536F07BD5E182D49 /* ReplaceMe.swift */; };
 		4E9CC4D25143E6506A357E62F9CA4419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		74AF3ECE6B33AC98BC21D0D2D1550F57 /* Rumpelstiltskin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78D5A8CCCC88E12FF5DB0016D58E067C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -62,7 +61,6 @@
 		A1DA24A1D610C7C5B0706D71FD98B66B /* Rumpelstiltskin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rumpelstiltskin.modulemap; sourceTree = "<group>"; };
 		AFF1B41828257B5DA2D5D00E32A45ED3 /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Rumpelstiltskin.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B76CA31D9010ED8B536F07BD5E182D49 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Rumpelstiltskin/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Tests-dummy.m"; sourceTree = "<group>"; };
 		C5998016687BE0AB6446AB8B8814099F /* Pods-Rumpelstiltskin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Tests-Info.plist"; sourceTree = "<group>"; };
 		C8469309DF588DCF811FC6B2CD25C7B5 /* Rumpelstiltskin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rumpelstiltskin-dummy.m"; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 		0008066CF2D95CA07053C9A2AA3235BC /* Rumpelstiltskin */ = {
 			isa = PBXGroup;
 			children = (
-				B76CA31D9010ED8B536F07BD5E182D49 /* ReplaceMe.swift */,
 				DF2C227DBBC568AD6677570C8851EE03 /* Pod */,
 				32E773C789EA78538D5C3FD211C96C8F /* Support Files */,
 				953BFA3D22CA980F00CC7F40 /* Rumpelstiltskin.swift */,
@@ -319,6 +316,9 @@
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				TargetAttributes = {
+					3B67208D8F3F636798FD09115F70FC6E = {
+						LastSwiftMigration = 1020;
+					};
 					8D678D18FB446A9CFD553723A3D57013 = {
 						LastSwiftMigration = 1020;
 					};
@@ -380,7 +380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150CFA80F7F03894FC3A3E3D77D25EA1 /* ReplaceMe.swift in Sources */,
 				ECCA8EA9040C5E917D3AC4D0818D4FAD /* Rumpelstiltskin-dummy.m in Sources */,
 				953BFA3E22CA980F00CC7F40 /* Rumpelstiltskin.swift in Sources */,
 			);
@@ -417,6 +416,7 @@
 			baseConfigurationReference = FA618D134D2BA71B41A89023908DEEBF /* Pods-Rumpelstiltskin_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -439,6 +439,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -483,6 +485,7 @@
 			baseConfigurationReference = B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -505,6 +508,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

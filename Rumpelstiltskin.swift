@@ -168,7 +168,7 @@ public class StringNode {
 
     public func swiftCode(combinedKey: String = "") -> String {
         var tempCombinedKey = combinedKey
-        tempCombinedKey.append("\(key).")
+        tempCombinedKey.append("\(key)")
         if let value = value {
             for valueBuilder in valueBuilderInOrderOfAppliance {
                 if valueBuilder.applies(to: value) {
@@ -178,6 +178,7 @@ public class StringNode {
             }
             return "No ValueBuilder Applied"
         }
+        tempCombinedKey.append(".")
 
         var result = "struct \(key) {\n"
         for reference in references {

@@ -1,3 +1,4 @@
+#!/usr/bin/env xcrun -sdk macosx swift
 //
 //  Rumpelstiltskin.swift
 //  Rumpelstiltskin
@@ -247,3 +248,17 @@ public class Rumpelstiltskin {
         return (firstPart.components(separatedBy: "."), valuePart)
     }
 }
+
+
+func run() throws {
+    assert(CommandLine.arguments.count == 3)
+    let data = try Data(contentsOf: URL(string: "file://\(CommandLine.arguments[1])")!)
+    let dataAsString = String(data: data, encoding: .utf8)!
+
+    let code = Rumpelstiltskin.extractStructure(from: dataAsString).swiftCode()
+    let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)
+
+    FileManager.default.createFile(atPath: CommandLine.arguments[2], contents: indentedCode.data(using: .utf8), attributes: [:])
+}
+
+try run()

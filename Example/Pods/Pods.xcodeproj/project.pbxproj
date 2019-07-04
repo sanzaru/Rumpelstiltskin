@@ -11,7 +11,7 @@
 		74AF3ECE6B33AC98BC21D0D2D1550F57 /* Rumpelstiltskin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		78D5A8CCCC88E12FF5DB0016D58E067C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		910F706880EDFC2C1F82BCC2E4D4D72F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		953BFA3E22CA980F00CC7F40 /* Rumpelstiltskin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BFA3D22CA980F00CC7F40 /* Rumpelstiltskin.swift */; };
+		953BFA3E22CA980F00CC7F40 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BFA3D22CA980F00CC7F40 /* main.swift */; };
 		AF46A18AD486E69BE7C37E0ABC8D127B /* Pods-Rumpelstiltskin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */; };
 		B9CB5F3BB24A0E0C8BB629D9D7E5531B /* Pods-Rumpelstiltskin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1799B3F88423DC30AC7C367D9E112270 /* Pods-Rumpelstiltskin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2862F56EC6FD05B127C574A968BE963 /* Pods-Rumpelstiltskin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */; };
@@ -55,7 +55,7 @@
 		725B1B2F83B387848734293EEEA21BC5 /* Pods-Rumpelstiltskin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rumpelstiltskin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rumpelstiltskin.xcconfig; sourceTree = "<group>"; };
 		87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Example-dummy.m"; sourceTree = "<group>"; };
-		953BFA3D22CA980F00CC7F40 /* Rumpelstiltskin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rumpelstiltskin.swift; sourceTree = "<group>"; };
+		953BFA3D22CA980F00CC7F40 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3C80664FD874A4C0151F721477D01F /* Pods-Rumpelstiltskin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1DA24A1D610C7C5B0706D71FD98B66B /* Rumpelstiltskin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rumpelstiltskin.modulemap; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				DF2C227DBBC568AD6677570C8851EE03 /* Pod */,
 				32E773C789EA78538D5C3FD211C96C8F /* Support Files */,
-				953BFA3D22CA980F00CC7F40 /* Rumpelstiltskin.swift */,
+				953BFA3D22CA980F00CC7F40 /* main.swift */,
 			);
 			name = Rumpelstiltskin;
 			path = ../..;
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCA8EA9040C5E917D3AC4D0818D4FAD /* Rumpelstiltskin-dummy.m in Sources */,
-				953BFA3E22CA980F00CC7F40 /* Rumpelstiltskin.swift in Sources */,
+				953BFA3E22CA980F00CC7F40 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

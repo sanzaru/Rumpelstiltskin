@@ -178,12 +178,14 @@ public class StringNode {
                     return "\(baseTranslationComment)\n\(definitionAndValue.definition)\(definitionAndValue.value)"
                 }
             }
-            return "No ValueBuilder Applied"
+            return "No ValueBuilder applied"
         }
         tempCombinedKey.append(".")
 
         var result = "struct \(key) {\n"
-        for reference in references {
+        for reference in references.sorted(by: { a, b -> Bool in
+            return a.key < b.key
+        }) {
             result += reference.value.swiftCode(combinedKey: tempCombinedKey)
         }
         result += "}\n"

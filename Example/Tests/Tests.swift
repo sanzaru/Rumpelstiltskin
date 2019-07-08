@@ -5,35 +5,69 @@ import XCTest
 let testData = """
 "ErrorMessages.EmptyCredentials" = "Fields empty. Please fill out all required fields.";
 "ErrorMessages.WrongCredentials" = "Wrong credentials. Please try again.";
-"ErrorMessages.NoConnection" = "Cannot connect to server. Are you offline?";
-"ErrorMessages.UnknownError" = "An unknown error has occurred";
-"Document.Record.DocumentNumber" = "Document number";
-"Document.Record.DocumentCode" = "Document code";
-"Document.Record.Surname" = "Surname";
-"Document.Record.GivenNames" = "Given names";
-"Document.Record.Gender" = "Gender";
-"Document.Record.DateOfBirth" = "Date of birth";
-"Document.Record.DateOfExpiry" = "Date of expiry";
-"Document.Record.Nationality" = "Nationality";
-"Document.Record.IssuingState" = "Issuing state";
-"Document.Record.PrimaryIdentifier" = "Surname";
-"Document.Record.SecondaryIdentifier" = "Given name";
-"Document.Record.Function" = "Given name %d";
+"""
+
+let expectedResult = """
+struct Localization {
+struct ErrorMessages {
+/// Base translation: Fields empty. Please fill out all required fields.
+public static let EmptyCredentials = NSLocalizedString("Localization.ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+/// Base translation: Wrong credentials. Please try again.
+public static let WrongCredentials = NSLocalizedString("Localization.ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+}
+}
+"""
+
+let complicatedTestData = """
+// This is a comment
+/// This is also a comment
+"ErrorMessages.EmptyCredentials" = "Fields empty. Please fill out all required fields.";
+
+
+/* This comment should be ignore */
+/** This aswell **/
+/* Multiline should be no
+
+problem aswell */
+"ErrorMessages.WrongCredentials" = "Wrong credentials %d. Please try again %@.";
+"""
+
+let expectedResultComplicatedData = """
+struct Localization {
+struct ErrorMessages {
+/// Base translation: Fields empty. Please fill out all required fields.
+public static let EmptyCredentials = NSLocalizedString("Localization.ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+/// Base translation: Wrong credentials %d. Please try again %@.
+public static func WrongCredentials(value1: Int, _ value2: String) -> String {
+return String(format: NSLocalizedString("Localization.ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+, value1, value2)
+}
+}
+}
 """
 
 class TableOfContentsSpec: XCTestCase {
-    override func setUp() {
-    }
-
     func testSwiftCodeGen() {
-        let result = Rumpelstiltskin.extractStructure(from: testData)
-        let code = result.swiftCode()
-        let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)
-        print(code)
-        print(indentedCode)
+        let structure = Rumpelstiltskin.extractStructure(from: testData)
+        let code = structure.swiftCode()
+        XCTAssertEqual(
+            code.trimmingCharacters(in: .whitespacesAndNewlines),
+            expectedResult.trimmingCharacters(in: .whitespacesAndNewlines))
     }
 
-    func testSwiftCodeGenComplicated() throws {
+    func testSwiftCodeGenComplicated() {
+        let structure = Rumpelstiltskin.extractStructure(from: complicatedTestData)
+        let code = structure.swiftCode()
+        XCTAssertEqual(
+            code.trimmingCharacters(in: .whitespacesAndNewlines),
+            expectedResultComplicatedData.trimmingCharacters(in: .whitespacesAndNewlines))
+    }
+
+    func testIfFunctionParsingApplies() {
+       XCTAssertTrue(Rumpelstiltskin.functionValueBuilder.applies(to: "Hallo %d"))
+    }
+
+    func testGenerationFromFile() throws {
         guard let strings =
             Bundle(for: type(of: self)).path(forResource: "Strings", ofType: "txt") else {
                 fatalError("Error initializing test")
@@ -46,15 +80,5 @@ class TableOfContentsSpec: XCTestCase {
         let code = result.swiftCode()
         let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)
         print(indentedCode)
-    }
-
-    func testFunctionParsing() {
-        let function = Rumpelstiltskin.functionValueBuilder.build(for: "Document.Function.Test", value: "%d Test %@ %f")
-
-        print(function)
-    }
-
-    func testIfFunctionParsingApplies() {
-       XCTAssertTrue(Rumpelstiltskin.functionValueBuilder.applies(to: "Hallo %d"))
     }
 }

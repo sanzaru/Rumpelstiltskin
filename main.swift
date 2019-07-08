@@ -174,7 +174,8 @@ public class StringNode {
             for valueBuilder in valueBuilderInOrderOfAppliance {
                 if valueBuilder.applies(to: value) {
                     let definitionAndValue = valueBuilder.build(for: tempCombinedKey, value: value)
-                    return "\(definitionAndValue.definition)\(definitionAndValue.value)"
+                    let baseTranslationComment = "/// Base translation: \(value)"
+                    return "\(baseTranslationComment)\n\(definitionAndValue.definition)\(definitionAndValue.value)"
                 }
             }
             return "No ValueBuilder Applied"

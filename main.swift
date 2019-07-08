@@ -199,6 +199,7 @@ public class Rumpelstiltskin {
     public static let functionValueBuilder = FunctionValueBuilder()
 
     public static func extractStructure(from content: String) -> StringNode {
+        print("Begin extracting structure from Localization file")
         let lines = content.components(separatedBy: "\n")
         let structure = StringNode(with: "Localization")
 
@@ -233,6 +234,7 @@ public class Rumpelstiltskin {
             currentNode.value = components.value
         }
 
+        print("Done extracting structure")
         return structure
     }
 
@@ -257,6 +259,10 @@ func run() throws {
     assert(CommandLine.arguments.count == 3)
     let data = try Data(contentsOf: URL(string: "file://\(CommandLine.arguments[1])")!)
     let dataAsString = String(data: data, encoding: .utf8)!
+
+
+    print("Using \(CommandLine.arguments[1]) as Localization File")
+    print("Writing to \(CommandLine.arguments[2])")
 
     let code = Rumpelstiltskin.extractStructure(from: dataAsString).swiftCode()
     let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)

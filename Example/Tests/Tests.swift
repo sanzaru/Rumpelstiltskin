@@ -79,6 +79,5 @@ class TableOfContentsSpec: XCTestCase {
         let result = Rumpelstiltskin.extractStructure(from: fileContentAsString)
         let code = result.swiftCode()
         let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)
-        print(indentedCode)
     }
 }

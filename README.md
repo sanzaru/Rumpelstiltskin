@@ -22,7 +22,7 @@ pod 'Rumpelstiltskin'
 
 ## Author
 
-Christian Braun, braun.christian.bamberg@gmail.com
+Christian Braun
 
 ## License
 

@@ -16,6 +16,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7CF3D4026A836D4175F6207E /* Pods_Rumpelstiltskin_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F324B4F7B2E082988DBEEBA /* Pods_Rumpelstiltskin_Tests.framework */; };
 		9538FCB422CE4816009AA948 /* Strings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9538FCB222CE4813009AA948 /* Strings.txt */; };
+		9568F33A2367329900682509 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9568F3392367329900682509 /* Localizable.strings */; };
+		9568F33D2367354100682509 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9568F33C2367354100682509 /* Localizations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		8922D44248DF72F95DB858DA /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3864EBB9464F081BB49F5E /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Rumpelstiltskin.podspec; path = ../Rumpelstiltskin.podspec; sourceTree = "<group>"; };
 		9538FCB222CE4813009AA948 /* Strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Strings.txt; sourceTree = "<group>"; };
+		9568F3392367329900682509 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9568F33C2367354100682509 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
 		A25CDD13FC6ED7CAAD96256E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,23 +119,25 @@
 		607FACD21AFB9204008FA782 /* Example for Rumpelstiltskin */ = {
 			isa = PBXGroup;
 			children = (
+				9568F33C2367354100682509 /* Localizations.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				607FACD31AFB9204008FA782 /* SupportingFiles */,
 			);
 			name = "Example for Rumpelstiltskin";
 			path = Rumpelstiltskin;
 			sourceTree = "<group>";
 		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+		607FACD31AFB9204008FA782 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
+				9568F3392367329900682509 /* Localizable.strings */,
 			);
-			name = "Supporting Files";
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -174,6 +180,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				19F1B393A5CECFF3E02CB57C /* [CP] Embed Pods Frameworks */,
+				9568F33B2367332100682509 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				9568F33A2367329900682509 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -308,6 +316,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9568F33B2367332100682509 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n# Get path to Generator script\nGENERATOR_PATH=\"${PROJECT_DIR}/../main.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Base.lproj/Localizable.strings\"\n\n# Get path to output. If you use ObjC version of output, set implementation file (.m), as header will be generated automatically\nOUTPUT_PATH=\"$BASE_PATH/Localizations.swift\"\n\n# Add permission to generator for script execution\nchmod 755 \"$GENERATOR_PATH\"\n\n# Actually generate output. -- CUSTOMIZE -- parameters to your needs (see documentation).\n# Will only re-generate script if something changed\nif [ \"$OUTPUT_PATH\" -ot \"$SOURCE_PATH\" ]; then\n\"$GENERATOR_PATH\" \"$SOURCE_PATH\" \"$OUTPUT_PATH\"\nfi\n";
+		};
 		C1FA72A581915DC825600824 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,6 +364,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9568F33D2367354100682509 /* Localizations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

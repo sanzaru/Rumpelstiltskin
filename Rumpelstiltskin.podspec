@@ -19,7 +19,7 @@ We only support a smal feature set of the original generator but it should be en
   s.homepage         = 'https://github.com/kurzdigital/Rumpelstiltskin'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Christian Braun' => 'christian.braun@kurzdigital.com' }
-  s.source           = { :git => 'https://github.com/Christian Braun/Rumpelstiltskin.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kurzdigital/Rumpelstiltskin.git', :tag => s.version.to_s }
 
   s.preserve_paths   = '*'
   s.ios.deployment_target = '9.0'

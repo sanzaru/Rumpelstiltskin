@@ -65,17 +65,19 @@ project. From then on the file will be updated automatically whenever the `Local
 ## Usage
 We assume that you already have a `Localizable.strings` file in place.
 
-Generate nested structures by seperating them with a `.`
+### Generate nested structures by seperating them with a `.`
 
 ```
 # Localizable.strings
 "MainStructure.NestedStructure.ConcreteValue" = "This needs to be localized";
 ```
+
+```
 // Code
 label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 ```
 
-Use functions to build strings. (Currently supported are Int, Float and String)
+### Use functions to build strings. (Currently supported are Int, Float and String)
 ```
 // %@: String, %d: Int, %f: float 
 "Buttons.TextWithVariables" = "Awesome %@, press me %d times!";

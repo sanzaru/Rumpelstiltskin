@@ -3,6 +3,28 @@
 [![Version](https://img.shields.io/cocoapods/v/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![Platform](https://img.shields.io/cocoapods/p/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 
+Rumpelstiltsin will turn your localization file looking like this:
+
+```
+"Accessibility.Example1" = "Accessibility";
+"Accessibility.ThumbnailImage" = "Thumbnail %d with name %@";
+```
+
+Into a swift struct looking like this:
+```
+struct Localizations {
+    struct Accessibility {
+        /// Base translation: Accessibility
+        public static let Example1 = NSLocalizedString("Localizations.Accessibility.Example1", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+        /// Base translation: Thumbnail %d with name %@
+        public static func ThumbnailImage(value1: Int, _ value2: String) -> String {
+            return String(format: NSLocalizedString("Localizations.Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+            , value1, value2)
+        }
+    }
+}
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

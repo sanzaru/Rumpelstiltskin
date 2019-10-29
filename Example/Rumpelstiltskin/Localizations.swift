@@ -3,64 +3,12 @@
 import Foundation
 struct Localizations {
     struct Accessibility {
-        /// Base translation: Button %@
-        public static func Button(value1: String) -> String {
-            return String(format: NSLocalizedString("Localizations.Accessibility.Button", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
-        }
         /// Base translation: Accessibility
         public static let Example1 = NSLocalizedString("Localizations.Accessibility.Example1", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-        /// Base translation: Image %@
-        public static func Image(value1: String) -> String {
-            return String(format: NSLocalizedString("Localizations.Accessibility.Image", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
-        }
-        /// Base translation: Preview %d
-        public static func Preview(value1: Int) -> String {
-            return String(format: NSLocalizedString("Localizations.Accessibility.Preview", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
-        }
-        /// Base translation: Thumbnail %d
-        public static func ThumbnailImage(value1: Int) -> String {
+        /// Base translation: Thumbnail %d with name %@
+        public static func ThumbnailImage(value1: Int, _ value2: String) -> String {
             return String(format: NSLocalizedString("Localizations.Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
-        }
-    }
-    struct Application {
-        /// Base translation: Version: %@
-        public static func Version(value1: String) -> String {
-            return String(format: NSLocalizedString("Localizations.Application.Version", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
-        }
-    }
-    struct Buttons {
-        /// Base translation: Some Example Text
-        public static let Example = NSLocalizedString("Localizations.Buttons.Example", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-        /// Base translation: Wow amazing button
-        public static let Number2 = NSLocalizedString("Localizations.Buttons.Number2", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-    }
-    struct Login {
-        /// Base translation: Password
-        public static let Password = NSLocalizedString("Localizations.Login.Password", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-        /// Base translation: Username
-        public static let Username = NSLocalizedString("Localizations.Login.Username", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-    }
-    struct LongerText {
-        /// Base translation: This is supposed to be longer text that includes some line breaks \n but is not formatted by using multi line string.  \n\n Multi line strings are currently not supported \n\n I'm sorry...
-        public static let NoMultiline = NSLocalizedString("Localizations.LongerText.NoMultiline", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-    }
-    struct Menu {
-        struct Toast {
-            /// Base translation: Downloading. %d Please wait
-            public static func Downloading(value1: Int) -> String {
-                return String(format: NSLocalizedString("Localizations.Menu.Toast.Downloading", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-                , value1)
-            }
-            /// Base translation: Preparing to download %d
-            public static func Preparing(value1: Int) -> String {
-                return String(format: NSLocalizedString("Localizations.Menu.Toast.Preparing", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-                , value1)
-            }
+            , value1, value2)
         }
     }
 }

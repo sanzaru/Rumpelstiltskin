@@ -16,8 +16,10 @@ Into a swift struct looking like this:
 ```
 struct Localizations {
     struct Accessibility {
+
         /// Base translation: Accessibility
         public static let Example1 = NSLocalizedString("Localizations.Accessibility.Example1", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+
         /// Base translation: Thumbnail %d with name %@
         public static func ThumbnailImage(value1: Int, _ value2: String) -> String {
             return String(format: NSLocalizedString("Localizations.Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")

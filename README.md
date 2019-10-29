@@ -1,6 +1,5 @@
 # Rumpelstiltskin
 
-[![CI Status](https://img.shields.io/travis/Christian Braun/Rumpelstiltskin.svg?style=flat)](https://travis-ci.org/Christian Braun/Rumpelstiltskin)
 [![Version](https://img.shields.io/cocoapods/v/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![License](https://img.shields.io/cocoapods/l/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![Platform](https://img.shields.io/cocoapods/p/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)

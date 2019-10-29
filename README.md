@@ -32,7 +32,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 * Swift 5.*
 
-## Usage
+## SETUP
 
 Create a new run script phase whithin your Xcode project build phases.
 
@@ -61,6 +61,31 @@ fi
 
 If you run Rumpelstiltskin for the first time you will have to add the newly generated `Localizations.swift` to your 
 project. From then on the file will be updated automatically whenever the `Localizable.strings` file is changed.
+
+## Usage
+We assume that you already have a `Localizable.strings` file in place.
+
+Generate nested structures by seperating them with a `.`
+
+```
+# Localizable.strings
+"MainStructure.NestedStructure.ConcreteValue" = "This needs to be localized";
+```
+// Code
+label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
+```
+
+Use functions to build strings. (Currently supported are Int, Float and String)
+```
+// %@: String, %d: Int, %f: float 
+"Buttons.TextWithVariables" = "Awesome %@, press me %d times!";
+```
+
+```
+// Code
+label.text = Localizations.Buttons.TextWithVariables(value1: "App", value2: 10)
+```
+
 
 ## Installation
 

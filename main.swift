@@ -92,7 +92,6 @@ return String(format: {{stringValueBuilder}}, {{formatParams}})
     }
 
     func createFunctionParameters(fromFormatParameters formatParameters: [String]) -> [(name: String, type: String)] {
-
         var result = [(String, String)]()
         for (index, formatParameter) in formatParameters.enumerated() {
             var type = ""
@@ -174,8 +173,21 @@ public class StringNode {
         
         import Foundation
 
-        \(swiftCode(combinedKey: ""))
+        struct Localizations {
+        \(swiftCodeSkipRoot())
+        }
         """
+    }
+
+    private func swiftCodeSkipRoot() -> String {
+        var result = ""
+        for reference in references.sorted(by: { a, b -> Bool in
+            return a.key < b.key
+        }) {
+            result += reference.value.swiftCode(combinedKey: "")
+        }
+
+        return result
     }
 
     private func swiftCode(combinedKey: String) -> String {
@@ -212,7 +224,7 @@ public class Rumpelstiltskin {
     public static func extractStructure(from content: String) -> StringNode {
         print("Begin extracting structure from Localization file")
         let lines = content.components(separatedBy: "\n")
-        let structure = StringNode(with: "Localizations")
+        let structure = StringNode(with: "")
 
         var lineInBlockComment = false
         for line in lines {

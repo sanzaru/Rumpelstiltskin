@@ -212,7 +212,7 @@ public class Rumpelstiltskin {
     public static func extractStructure(from content: String) -> StringNode {
         print("Begin extracting structure from Localization file")
         let lines = content.components(separatedBy: "\n")
-        let structure = StringNode(with: "Localization")
+        let structure = StringNode(with: "Localizations")
 
         var lineInBlockComment = false
         for line in lines {

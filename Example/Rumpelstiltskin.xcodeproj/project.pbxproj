@@ -331,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n# Get path to Generator script\nGENERATOR_PATH=\"${PROJECT_DIR}/../main.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Base.lproj/Localizable.strings\"\n\n# Get path to output. If you use ObjC version of output, set implementation file (.m), as header will be generated automatically\nOUTPUT_PATH=\"$BASE_PATH/Localizations.swift\"\n\n# Add permission to generator for script execution\nchmod 755 \"$GENERATOR_PATH\"\n\n# Actually generate output. -- CUSTOMIZE -- parameters to your needs (see documentation).\n# Will only re-generate script if something changed\nif [ \"$OUTPUT_PATH\" -ot \"$SOURCE_PATH\" ]; then\n\"$GENERATOR_PATH\" \"$SOURCE_PATH\" \"$OUTPUT_PATH\"\nfi\n";
+			shellScript = "# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n# Get path to Generator script\nGENERATOR_PATH=\"${PROJECT_DIR}/../main.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Base.lproj/Localizable.strings\"\n\nOUTPUT_PATH=\"$BASE_PATH/Localizations.swift\"\n\n# Add permission to generator for script execution\nchmod 755 \"$GENERATOR_PATH\"\n\n\"$GENERATOR_PATH\" \"$SOURCE_PATH\" \"$OUTPUT_PATH\"\n";
 		};
 		C1FA72A581915DC825600824 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

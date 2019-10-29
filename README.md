@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![Platform](https://img.shields.io/cocoapods/p/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
+<img src="/Logo.png" width="150">
 
 Rumpelstiltskin will turn your localization file looking like this:
 
@@ -87,6 +88,9 @@ label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 // Code
 label.text = Localizations.Buttons.TextWithVariables(value1: "App", value2: 10)
 ```
+
+### Currently not supported
+* Multiline strings: Please use `\n` to format your strings within your `Localizable.strings` file
 
 
 ## Installation

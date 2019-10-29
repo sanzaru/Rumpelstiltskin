@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![Platform](https://img.shields.io/cocoapods/p/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 
-Rumpelstiltsin will turn your localization file looking like this:
+Rumpelstiltskin will turn your localization file looking like this:
 
 ```
 "Accessibility.Example1" = "Accessibility";
@@ -32,7 +32,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 * Swift 5.*
 
-## SETUP
+## Setup
 
 Create a new run script phase whithin your Xcode project build phases.
 

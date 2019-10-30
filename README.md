@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 [![Platform](https://img.shields.io/cocoapods/p/Rumpelstiltskin.svg?style=flat)](https://cocoapods.org/pods/Rumpelstiltskin)
 
-<div align="center"><img src="/Logo.png" width="150"/></div>
+<div align="center"><img src="https://github.com/kurzdigital/Rumpelstiltskin/blob/master/Logo.png" width="150"/></div>
 
 Rumpelstiltskin will turn your localization file looking like this:
 
@@ -28,6 +28,7 @@ struct Localizations {
     }
 }
 ```
+It is built to be a drop in replacement for the [Laurine - Storyboard Generator Script](https://github.com/JiriTrecak/Laurine) which unfortunately stopped being maintained in 2017.
 
 ## Example
 

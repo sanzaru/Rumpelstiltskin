@@ -21,6 +21,7 @@ We only support a smal feature set of the original generator but it should be en
   s.author           = { 'Christian Braun' => 'christian.braun@kurzdigital.com' }
   s.source           = { :git => 'https://github.com/kurzdigital/Rumpelstiltskin.git', :tag => s.version.to_s }
 
+  s.swift_version = "5.0"
   s.source_files = "main.swift"
   s.preserve_paths   = '*'
   s.ios.deployment_target = '9.0'

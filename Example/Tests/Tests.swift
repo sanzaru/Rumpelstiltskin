@@ -13,13 +13,14 @@ let expectedResult = """
 
 import Foundation
 
-struct Localization {
+struct Localizations {
 struct ErrorMessages {
 /// Base translation: Fields empty. Please fill out all required fields.
-public static let EmptyCredentials = NSLocalizedString("Localization.ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+public static let EmptyCredentials = NSLocalizedString("ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
 /// Base translation: Wrong credentials. Please try again.
-public static let WrongCredentials = NSLocalizedString("Localization.ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+public static let WrongCredentials = NSLocalizedString("ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
 }
+
 }
 """
 
@@ -43,16 +44,17 @@ let expectedResultComplicatedData = """
 
 import Foundation
 
-struct Localization {
+struct Localizations {
 struct ErrorMessages {
 /// Base translation: Fields empty. Please fill out all required fields.
-public static let EmptyCredentials = NSLocalizedString("Localization.ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+public static let EmptyCredentials = NSLocalizedString("ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
 /// Base translation: Wrong credentials %d. Please try again %@.
 public static func WrongCredentials(value1: Int, _ value2: String) -> String {
-return String(format: NSLocalizedString("Localization.ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+return String(format: NSLocalizedString("ErrorMessages.WrongCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
 , value1, value2)
 }
 }
+
 }
 """
 

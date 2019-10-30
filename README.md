@@ -18,11 +18,11 @@ struct Localizations {
     struct Accessibility {
 
         /// Base translation: Accessibility
-        public static let Example1 = NSLocalizedString("Localizations.Accessibility.Example1", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+        public static let Example1 = NSLocalizedString("Accessibility.Example1", tableName: nil, bundle: Bundle.main, value: "", comment: "")
 
         /// Base translation: Thumbnail %d with name %@
         public static func ThumbnailImage(value1: Int, _ value2: String) -> String {
-            return String(format: NSLocalizedString("Localizations.Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")
+            return String(format: NSLocalizedString("Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")
             , value1, value2)
         }
     }

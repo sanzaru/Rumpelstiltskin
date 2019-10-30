@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Rumpelstiltskin'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Converting Localizable.strings file int a Swift struct'
 
   s.description      = <<-DESC
@@ -21,6 +21,7 @@ We only support a smal feature set of the original generator but it should be en
   s.author           = { 'Christian Braun' => 'christian.braun@kurzdigital.com' }
   s.source           = { :git => 'https://github.com/kurzdigital/Rumpelstiltskin.git', :tag => s.version.to_s }
 
+  s.source_files = "main.swift"
   s.preserve_paths   = '*'
   s.ios.deployment_target = '9.0'
 end

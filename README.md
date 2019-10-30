@@ -13,7 +13,7 @@ Rumpelstiltskin will turn your localization file looking like this:
 ```
 
 Into a swift struct looking like this:
-```
+```swift
 struct Localizations {
     struct Accessibility {
 
@@ -77,7 +77,7 @@ We assume that you already have a `Localizable.strings` file in place.
 "MainStructure.NestedStructure.ConcreteValue" = "This needs to be localized";
 ```
 
-```
+```swift
 // Code
 label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 ```
@@ -88,7 +88,7 @@ label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 "Buttons.TextWithVariables" = "Awesome %@, press me %d times!";
 ```
 
-```
+```swift
 // Code
 label.text = Localizations.Buttons.TextWithVariables(value1: "App", value2: 10)
 ```

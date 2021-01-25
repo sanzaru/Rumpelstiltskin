@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Rumpelstiltskin'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Converting Localizable.strings file int a Swift struct'
 
   s.description      = <<-DESC

@@ -20,10 +20,10 @@ struct Localizations {
             return String(format: NSLocalizedString("Accessibility.Preview", tableName: nil, bundle: Bundle.main, value: "", comment: "")
             , value1)
         }
-        /// Base translation: Thumbnail %d
-        public static func ThumbnailImage(value1: Int) -> String {
+        /// Base translation: Thumbnail %d %.4f
+        public static func ThumbnailImage(value1: Int, _ value2: Float) -> String {
             return String(format: NSLocalizedString("Accessibility.ThumbnailImage", tableName: nil, bundle: Bundle.main, value: "", comment: "")
-            , value1)
+            , value1, value2)
         }
     }
     struct Application {

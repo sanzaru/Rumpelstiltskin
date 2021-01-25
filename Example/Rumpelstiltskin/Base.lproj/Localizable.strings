@@ -15,7 +15,7 @@
 "Accessibility.Example1" = "Accessibility";
 "Accessibility.Button" = "Button %@";
 "Accessibility.Image" = "Image %@";
-"Accessibility.ThumbnailImage" = "Thumbnail %d";
+"Accessibility.ThumbnailImage" = "Thumbnail %d %.4f";
 "Accessibility.Preview" = "Preview %d";
 "Accessibility.Preview" = "Preview %.2f";
 

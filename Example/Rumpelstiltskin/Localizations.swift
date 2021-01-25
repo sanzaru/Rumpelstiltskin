@@ -15,8 +15,8 @@ struct Localizations {
             return String(format: NSLocalizedString("Accessibility.Image", tableName: nil, bundle: Bundle.main, value: "", comment: "")
             , value1)
         }
-        /// Base translation: Preview %d
-        public static func Preview(value1: Int) -> String {
+        /// Base translation: Preview %.2f
+        public static func Preview(value1: Float) -> String {
             return String(format: NSLocalizedString("Accessibility.Preview", tableName: nil, bundle: Bundle.main, value: "", comment: "")
             , value1)
         }

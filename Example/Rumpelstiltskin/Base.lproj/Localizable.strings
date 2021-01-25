@@ -17,6 +17,7 @@
 "Accessibility.Image" = "Image %@";
 "Accessibility.ThumbnailImage" = "Thumbnail %d";
 "Accessibility.Preview" = "Preview %d";
+"Accessibility.Preview" = "Preview %.2f";
 
 /* Menu */
 "Menu.Toast.Preparing" = "Preparing to download %d";

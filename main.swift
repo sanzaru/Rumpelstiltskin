@@ -11,6 +11,40 @@ import Foundation
 public typealias NodeKey = String
 public typealias NodeValue = String
 
+//from NSHipster - http://nshipster.com/swift-literal-convertible/
+struct Regex {
+    let pattern: String
+    let options: NSRegularExpression.Options?
+
+    private var matcher: NSRegularExpression? {
+        return try? NSRegularExpression(pattern: pattern, options: options ?? [])
+    }
+
+    init(pattern: String, options: NSRegularExpression.Options? = nil) {
+        self.pattern = pattern
+        self.options = options
+    }
+
+    func match(string: String, options: NSRegularExpression.MatchingOptions? = nil) -> Bool {
+        return self.matcher?.numberOfMatches(in: string, options: options ?? [], range: NSMakeRange(0, string.utf16.count)) != 0
+    }
+}
+
+protocol RegularExpressionMatchable {
+    func match(regex: Regex) -> Bool
+}
+
+extension String: RegularExpressionMatchable {
+    func match(regex: Regex) -> Bool {
+        return regex.match(string: self)
+    }
+}
+
+func ~=<T: RegularExpressionMatchable>(pattern: Regex, matchable: T) -> Bool {
+    return matchable.match(regex: pattern)
+}
+
+
 public protocol ValueBuilder {
     var definitionPattern: String { get }
     var valuePattern: String { get }
@@ -73,11 +107,11 @@ return String(format: {{stringValueBuilder}}, {{formatParams}})
     }
 
     public func applies(to value: NodeValue) -> Bool {
-        return value.range(of: #"%[@df]"#, options: .regularExpression) != nil
+        return value.range(of: #"%([@df]|(\.\d*f))"#, options: .regularExpression) != nil
     }
 
     func formatPlaceholders(from string: String) -> [String] {
-        let regex = try? NSRegularExpression(pattern: #"%[@df]"#, options: [])
+        let regex = try? NSRegularExpression(pattern: #"%([@df]|(\.\d*f))"#, options: [])
         let results = regex?.matches(
             in: string,
             options: [],
@@ -100,7 +134,7 @@ return String(format: {{stringValueBuilder}}, {{formatParams}})
                 type = "String"
             case "%d":
                 type = "Int"
-            case "%f":
+            case Regex(pattern: "(%(\\.*\\d*f)"):
                 type = "Float"
             default:
                 continue

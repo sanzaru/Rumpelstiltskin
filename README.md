@@ -50,19 +50,25 @@ BASE_PATH="$PROJECT_DIR/$PROJECT_NAME"
 GENERATOR_PATH="${PODS_ROOT}/Rumpelstiltskin/main.swift"
 
 # Get path to main localization file (usually english).
-SOURCE_PATH="$BASE_PATH/SupportingFiles/Base.lproj/Localizable.strings"
+SOURCE_PATH="$BASE_PATH/Supporting Files/Base.lproj/Localizable.strings"
 
-OUTPUT_PATH="$BASE_PATH/Vendor/Localizations.swift"
+OUTPUT_PATH="$BASE_PATH/Utils/Localizations.swift"
 
 # Add permission to generator for script execution
 chmod 755 "$GENERATOR_PATH"
 
 # Will only re-generate script if something changed
-if [ "$SOURCE_PATH" -nt "$OUTPUT_PATH" ]; then
-"$GENERATOR_PATH" "$SOURCE_PATH" "$OUTPUT_PATH"
-echo "Regenerated strings structure"
+if [ ! -f "$OUTPUT_PATH" ] || [ "$SOURCE_PATH" -nt "$OUTPUT_PATH" ]; then
+    # Create the Localizations.swift-file if it doesn't exist yet
+    if [ ! -f "$OUTPUT_PATH" ]; then
+        touch "$OUTPUT_PATH"
+    fi
+    "$GENERATOR_PATH" "$SOURCE_PATH" "$OUTPUT_PATH"
+    echo "Regenerated strings structure"
 fi
 ```
+
+You may have to change `SOURCE_PATH` and `OUTPUT_PATH` to your needs.
 
 If you run Rumpelstiltskin for the first time you will have to add the newly generated `Localizations.swift` to your 
 project. From then on the file will be updated automatically whenever the `Localizable.strings` file is changed.

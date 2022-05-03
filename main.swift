@@ -314,7 +314,7 @@ public class Rumpelstiltskin {
 
 func run() throws {
     assert(CommandLine.arguments.count == 3)
-    let data = try Data(contentsOf: URL(string: "file://\(CommandLine.arguments[1])")!)
+    let data = try Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[1]))
     let dataAsString = String(data: data, encoding: .utf8)!
 
 

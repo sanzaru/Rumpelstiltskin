@@ -42,13 +42,11 @@ extension RumpelstiltskinBuildPlugin: XcodeBuildToolPlugin {
     }
 
     private func inputFiles(target: XcodeTarget) -> String {
-        let files = target
-            .inputFiles
-            .filter { $0.type == .resource && $0.path.extension == "strings" }
-            .map(\.path)
+        if let files = target.inputFiles.filter({ $0.type == .resource && $0.path.extension == "strings" }).first {
+            return files.path.description
+        }
 
-        print(files.map(\.description).joined(separator: " "))
-        return files.map(\.description).joined(separator: " ")
+        return ""
     }
 }
 #endif

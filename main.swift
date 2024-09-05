@@ -324,7 +324,8 @@ func run() throws {
     let code = Rumpelstiltskin.extractStructure(from: dataAsString).swiftCode()
     let indentedCode = Indentation(indentationType: .spaces(tabSize: 4)).indent(code)
 
-    FileManager.default.createFile(atPath: CommandLine.arguments[2], contents: indentedCode.data(using: .utf8), attributes: [:])
+    //FileManager.default.createFile(atPath: CommandLine.arguments[2], contents: indentedCode.data(using: .utf8), attributes: [:])
+    try indentedCode.data(using: .utf8)?.write(to: URL(string: "file://"+CommandLine.arguments[2])!)
 }
 
 try run()

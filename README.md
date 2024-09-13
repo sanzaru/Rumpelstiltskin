@@ -139,7 +139,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Author
 
-Christian Braun
+KURZ Digital Solutions GmbH & Co. KG
 
 ## License
 

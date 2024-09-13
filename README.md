@@ -5,6 +5,8 @@
 
 <div align="center"><img src="https://github.com/kurzdigital/Rumpelstiltskin/blob/master/Logo.png" width="150"/></div>
 
+# Abstract
+
 Rumpelstiltskin will turn your localization file looking like this:
 
 ```
@@ -12,7 +14,7 @@ Rumpelstiltskin will turn your localization file looking like this:
 "Accessibility.ThumbnailImage" = "Thumbnail %d with name %@";
 ```
 
-Into a swift struct looking like this:
+into a swift struct looking like this:
 ```swift
 struct Localizations {
     struct Accessibility {
@@ -30,14 +32,46 @@ struct Localizations {
 ```
 It is built to be a drop in replacement for the [Laurine - Storyboard Generator Script](https://github.com/JiriTrecak/Laurine) which unfortunately stopped being maintained in 2017.
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 * Swift 5.*
 
-## Setup
+## Currently not supported
+* Multiline strings: Please use `\n` to format your strings within your `Localizable.strings` file
+
+## Installation
+
+You can install the library via SPM or Cocoapods.
+
+> **Note:** It is highly recommended to use the Swift Build Plugin version as there is no guarantee for future Cocoapod compatibility.
+
+### Swift Package Manager (SPM)
+
+Use the following link to add Rumpelstilskin as a Package Dependency to an Xcode project:
+
+```
+https://github.com/kurzdigital/Rumpelstiltskin.git
+```
+
+### Cocoapods
+
+Rumpelstiltskin is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'Rumpelstiltskin'
+```
+
+## Configuration
+
+### Swift Build Tool Plugin
+
+Rumpelstiltskin can be easily used as a build tool plugin inside XCode.
+
+Build tool plugins run as a build phase of each target. When a project has multiple targets, the plugin must be added to the desired targets individually.
+
+To do this, add the RumpelstiltskinBuildToolPlugin to the Run Build Tool Plug-ins phase of the Build Phases.
+
+### Cocoapods
 
 Create a new run script phase whithin your Xcode project build phases.
 
@@ -70,7 +104,7 @@ fi
 
 You may have to change `SOURCE_PATH` and `OUTPUT_PATH` to your needs.
 
-If you run Rumpelstiltskin for the first time you will have to add the newly generated `Localizations.swift` to your 
+If you run Rumpelstiltskin for the first time you will have to add the newly generated `Localizations.swift` to your
 project. From then on the file will be updated automatically whenever the `Localizable.strings` file is changed.
 
 ## Usage
@@ -90,7 +124,7 @@ label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 
 ### Use functions to build strings. (Currently supported are Int, Float and String)
 ```
-// %@: String, %d: Int, %f: float 
+// %@: String, %d: Int, %f: float
 "Buttons.TextWithVariables" = "Awesome %@, press me %d times!";
 ```
 
@@ -99,18 +133,9 @@ label.text = Localizations.MainStructure.NestedStructure.ConcreteValue
 label.text = Localizations.Buttons.TextWithVariables(value1: "App", value2: 10)
 ```
 
-### Currently not supported
-* Multiline strings: Please use `\n` to format your strings within your `Localizable.strings` file
+## Example
 
-
-## Installation
-
-Rumpelstiltskin is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'Rumpelstiltskin'
-```
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 

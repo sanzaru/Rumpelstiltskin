@@ -7,7 +7,8 @@ let package: Package = Package(
     defaultLocalization: "en",
     products: [
         .library(name: "Rumpelstiltskin",targets: ["Rumpelstiltskin"]),
-        .plugin(name: "RumpelstiltskinBuildPlugin", targets: ["RumpelstiltskinBuildPlugin"])
+        .plugin(name: "RumpelstiltskinBuildPlugin", targets: ["RumpelstiltskinBuildPlugin"]),
+        .executable(name: "RumpelstiltskinBin", targets: ["RumpelstiltskinBin"])
     ],
     targets: [
         .executableTarget(

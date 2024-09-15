@@ -4,28 +4,8 @@
  Copyright © 2017 KURZ Digital Solutions GmbH & Co. KG. All rights reserved.
 */
 
-/* General */
-"Application.Version" = "Version: %@";
-
-/* Buttons */
 "Buttons.Example" = "Some Example Text";
-"Buttons.Number2" = "Wow amazing button";
-
-/* General Accessibility */
-"Accessibility.Example1" = "Accessibility";
 "Accessibility.Button" = "Button %@";
-"Accessibility.Image" = "Image %@";
-"Accessibility.ThumbnailImage" = "Thumbnail %d %.4f";
-"Accessibility.Preview" = "Preview %d";
-"Accessibility.Preview" = "Preview %.2f";
-
-/* Menu */
-"Menu.Toast.Preparing" = "Preparing to download %d";
-"Menu.Toast.Downloading" = "Downloading. %d Please wait";
-
-/* Login */
-"Login.Username" = "Username";
-"Login.Password" = "Password";
 
 /* Longer text */
 "LongerText.NoMultiline" = "This is supposed to be longer text that includes some line breaks \n but is not formatted by using multi line string.  \n\n Multi line strings are currently not supported \n\n I'm sorry...";

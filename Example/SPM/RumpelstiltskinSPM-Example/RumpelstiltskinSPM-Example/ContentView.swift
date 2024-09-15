@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 10) {
+            Button(Localizations.Buttons.Example) {}
+
+            Text(Localizations.LongerText.NoMultiline)
+
+            Button(Localizations.Accessibility.Button(value1: "Some Value")) {}
         }
         .padding()
     }

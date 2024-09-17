@@ -1,4 +1,4 @@
-// swift-tools-version: 5.5
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -6,7 +6,6 @@ let package: Package = Package(
     name: "Rumpelstiltskin",
     defaultLocalization: "en",
     products: [
-        .library(name: "Rumpelstiltskin",targets: ["Rumpelstiltskin"]),
         .plugin(name: "RumpelstiltskinBuildPlugin", targets: ["RumpelstiltskinBuildPlugin"]),
         .executable(name: "RumpelstiltskinBin", targets: ["RumpelstiltskinBin"])
     ],
@@ -24,12 +23,5 @@ let package: Package = Package(
             path: "Plugins",
             exclude: ["../Example"]
         ),
-        .target(
-            name: "Rumpelstiltskin",
-            exclude: ["../../Example"],
-            plugins: [
-                .plugin(name: "RumpelstiltskinBuildPlugin")
-            ]
-        )
     ]
 )

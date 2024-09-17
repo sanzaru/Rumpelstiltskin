@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		680C4C1F2C97230B0038F37B /* SPMExamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 680C4C1E2C97230B0038F37B /* SPMExamplePackage */; };
+		68117CD32C9A484200386CCC /* SPMExamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 68117CD22C9A484200386CCC /* SPMExamplePackage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6809E99E2C8A43C8008DBBFF /* RumpelstiltskinSPM-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RumpelstiltskinSPM-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				680C4C1F2C97230B0038F37B /* SPMExamplePackage in Frameworks */,
+				68117CD32C9A484200386CCC /* SPMExamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,8 @@
 			);
 			name = "RumpelstiltskinSPM-Example";
 			packageProductDependencies = (
+				680C4C1E2C97230B0038F37B /* SPMExamplePackage */,
+				68117CD22C9A484200386CCC /* SPMExamplePackage */,
 			);
 			productName = "RumpelstiltskinSPM-Example";
 			productReference = 6809E99E2C8A43C8008DBBFF /* RumpelstiltskinSPM-Example.app */;
@@ -106,6 +115,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				6809E9C22C8A4984008DBBFF /* XCLocalSwiftPackageReference "../../../../Rumpelstiltskin" */,
+				68117CD12C9A484200386CCC /* XCLocalSwiftPackageReference "RumpelstiltskinSPM-Example/SPMExamplePackage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6809E99F2C8A43C8008DBBFF /* Products */;
@@ -279,6 +289,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +318,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,6 +360,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../../../../Rumpelstiltskin;
 		};
+		68117CD12C9A484200386CCC /* XCLocalSwiftPackageReference "RumpelstiltskinSPM-Example/SPMExamplePackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "RumpelstiltskinSPM-Example/SPMExamplePackage";
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -355,6 +371,14 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6809E9C22C8A4984008DBBFF /* XCLocalSwiftPackageReference "../../../../Rumpelstiltskin" */;
 			productName = "plugin:RumpelstiltskinBuildPlugin";
+		};
+		680C4C1E2C97230B0038F37B /* SPMExamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SPMExamplePackage;
+		};
+		68117CD22C9A484200386CCC /* SPMExamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SPMExamplePackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,0 +1,8 @@
+/*
+ Localizable.strings
+
+ Copyright © 2017 KURZ Digital Solutions GmbH & Co. KG. All rights reserved.
+ */
+
+"SPMExampleMessages.Label1" = "Some label in the package";
+"SPMExampleMessages.Label2" = "Some label in the package";

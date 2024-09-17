@@ -4,6 +4,7 @@
 //  Rumpelstiltskin
 //
 //  Created by Christian Braun on 01.07.19.
+//  Copyright KURZ Digital Solutions GmbH & Co. KG
 //
 
 import Foundation
@@ -52,17 +53,21 @@ public protocol ValueBuilder {
     func applies(to value: NodeValue) -> Bool
 }
 
-public struct StringValueBuilder: ValueBuilder {
+public struct StringValueBuilder: ValueBuilder, Sendable {
     public let definitionPattern: String = "public static let {{variableName}} = "
-    public let valuePattern: String = "NSLocalizedString(\"{{key}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")\n"
 
+    public let valuePattern: String = "NSLocalizedString(\"{{key}}\", tableName: nil, bundle: Bundle.main, value: \"\", comment: \"\")\n"
+    public let valuePatternSPM: String = "NSLocalizedString(\"{{key}}\", tableName: nil, bundle: Bundle.module, value: \"\", comment: \"\")\n"
 
     public func build(for key: NodeKey, value: NodeValue) -> (definition: String, value: String) {
         let variableName = key.split(separator: ".").last!
+        let isSPM = CommandLine.arguments.count > 3 && CommandLine.arguments[3] == "SPM"
+
         return (
             definitionPattern
                 .replacingOccurrences(of: "{{variableName}}", with: variableName),
-            valuePattern
+
+            (isSPM ? valuePatternSPM : valuePattern)
                 .replacingOccurrences(of: "{{key}}", with: key))
     }
 
@@ -71,7 +76,7 @@ public struct StringValueBuilder: ValueBuilder {
     }
 }
 
-public struct FunctionValueBuilder: ValueBuilder {
+public struct FunctionValueBuilder: ValueBuilder, Sendable {
     public var definitionPattern: String = "public static func {{functionName}}({{functionParams}}) -> String"
     public var valuePattern: String =  """
  {
@@ -313,7 +318,7 @@ public class Rumpelstiltskin {
 
 
 func run() throws {
-    assert(CommandLine.arguments.count == 3)
+    assert(CommandLine.arguments.count >= 3)
     let data = try Data(contentsOf: URL(fileURLWithPath: CommandLine.arguments[1]))
     let dataAsString = String(data: data, encoding: .utf8)!
 

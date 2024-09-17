@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E9CC4D25143E6506A357E62F9CA4419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		74AF3ECE6B33AC98BC21D0D2D1550F57 /* Rumpelstiltskin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78D5A8CCCC88E12FF5DB0016D58E067C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		910F706880EDFC2C1F82BCC2E4D4D72F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		953BFA3E22CA980F00CC7F40 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BFA3D22CA980F00CC7F40 /* main.swift */; };
-		AF46A18AD486E69BE7C37E0ABC8D127B /* Pods-Rumpelstiltskin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */; };
-		B9CB5F3BB24A0E0C8BB629D9D7E5531B /* Pods-Rumpelstiltskin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1799B3F88423DC30AC7C367D9E112270 /* Pods-Rumpelstiltskin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2862F56EC6FD05B127C574A968BE963 /* Pods-Rumpelstiltskin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */; };
-		EC3FF0AEA3D2B10C8EBA47DD75B56B39 /* Pods-Rumpelstiltskin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F469E92EDF87EF8D1F3822024D44AB /* Pods-Rumpelstiltskin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECCA8EA9040C5E917D3AC4D0818D4FAD /* Rumpelstiltskin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8469309DF588DCF811FC6B2CD25C7B5 /* Rumpelstiltskin-dummy.m */; };
+		32E72304BBB0A9607EA3D6A2DC2F12EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		640D77789AEE89A0DDD0C97409D5C36D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C20036FAFED9BF158A0175B9027AC /* main.swift */; };
+		76728D9821EBE5E11A34FC1211CAFEE9 /* Rumpelstiltskin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D10A99CCDA55AB38750782744AD2E1D /* Rumpelstiltskin-dummy.m */; };
+		99467C95DAF78E9B00A34E9BE98135EA /* Pods-Rumpelstiltskin_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1799B3F88423DC30AC7C367D9E112270 /* Pods-Rumpelstiltskin_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0E51630A7509EA88D0B77262E648435 /* Pods-Rumpelstiltskin_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */; };
+		A92619A043BB00FDE40A3E5668B7E4A9 /* Pods-Rumpelstiltskin_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F469E92EDF87EF8D1F3822024D44AB /* Pods-Rumpelstiltskin_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7515D56D5A3B4CB2CC42174A76142B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C07B1E93C8E70012EEB4AFD327CC7334 /* Rumpelstiltskin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F3A2884E5A744D5B5B9997A582452A /* Rumpelstiltskin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF2B03F147F6C80E4A2C11E3D10F4D61 /* Pods-Rumpelstiltskin_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */; };
+		F16D71CA2FEFC5FE9D617B5853D30EEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B700AFA4F8A7CD29B8A04E90C222B6F /* PBXContainerItemProxy */ = {
+		50D0885F07598DC45547A070A6C528C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D678D18FB446A9CFD553723A3D57013;
 			remoteInfo = Rumpelstiltskin;
 		};
-		862ECC22F838CF31F084DAD3F4C30772 /* PBXContainerItemProxy */ = {
+		5C22DEA53A7007845631B60B2AF1D208 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,109 +37,103 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FB77AC8B0625D64BC91DF9DB76F6698 /* Rumpelstiltskin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rumpelstiltskin.debug.xcconfig; sourceTree = "<group>"; };
+		10669C38CC5977617B4389E72E1FE09A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1799B3F88423DC30AC7C367D9E112270 /* Pods-Rumpelstiltskin_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rumpelstiltskin_Tests-umbrella.h"; sourceTree = "<group>"; };
-		22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rumpelstiltskin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-umbrella.h"; sourceTree = "<group>"; };
-		3B6BC0E5B314B07BFDB483F8FA303660 /* Rumpelstiltskin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rumpelstiltskin-Info.plist"; sourceTree = "<group>"; };
+		17AE2D49DF296B781752213309D42F78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Rumpelstiltskin; path = Rumpelstiltskin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		371C448E25B54D1B1D219A7E0EE8F7D7 /* Rumpelstiltskin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rumpelstiltskin.release.xcconfig; sourceTree = "<group>"; };
 		3C141869FD1B53476A2DDE1500A35B27 /* Pods-Rumpelstiltskin_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rumpelstiltskin_Tests.modulemap"; sourceTree = "<group>"; };
 		3CE1C8C1A166839067E3DB1CC1CF6D03 /* Pods-Rumpelstiltskin_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Example-Info.plist"; sourceTree = "<group>"; };
+		3E8EA0F76EF90CB2F192AF3548E0A267 /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Rumpelstiltskin.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4E227986B78678AFECE0DB2B99B67212 /* Pods-Rumpelstiltskin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4FDBBA63CF2504EAEDDD22A8A7225ACD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		53B754AA7E8678E888C175C9F04DDE89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5A905BBE1C06944DD830C1C359890C18 /* Rumpelstiltskin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-prefix.pch"; sourceTree = "<group>"; };
 		5BCA828B648A6CFD8C1EA66AA7BFDE21 /* Pods-Rumpelstiltskin_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C2930BD8E17FA563A596B1638A52B90 /* Pods-Rumpelstiltskin_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rumpelstiltskin_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5C98DBD2CE1DC2117326B18EB665F592 /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C404FB4C57DA5191879D9262500A1DC /* Pods_Rumpelstiltskin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FAB31BE29F5A32F41CDDB4694D3B7A4 /* Rumpelstiltskin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-prefix.pch"; sourceTree = "<group>"; };
+		5C98DBD2CE1DC2117326B18EB665F592 /* Pods-Rumpelstiltskin_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Rumpelstiltskin_Example"; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C404FB4C57DA5191879D9262500A1DC /* Pods-Rumpelstiltskin_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Rumpelstiltskin_Tests"; path = Pods_Rumpelstiltskin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D10A99CCDA55AB38750782744AD2E1D /* Rumpelstiltskin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rumpelstiltskin-dummy.m"; sourceTree = "<group>"; };
 		725B1B2F83B387848734293EEEA21BC5 /* Pods-Rumpelstiltskin_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Rumpelstiltskin_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Rumpelstiltskin.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		87943AC9BFC9B487DA4D38EA3C828A88 /* Pods-Rumpelstiltskin_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Example-dummy.m"; sourceTree = "<group>"; };
-		953BFA3D22CA980F00CC7F40 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3C80664FD874A4C0151F721477D01F /* Pods-Rumpelstiltskin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A1DA24A1D610C7C5B0706D71FD98B66B /* Rumpelstiltskin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rumpelstiltskin.modulemap; sourceTree = "<group>"; };
-		AFF1B41828257B5DA2D5D00E32A45ED3 /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Rumpelstiltskin.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		A1CC625A91AE7C7867022BB901F00203 /* Rumpelstiltskin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Rumpelstiltskin.modulemap; sourceTree = "<group>"; };
+		A1F3A2884E5A744D5B5B9997A582452A /* Rumpelstiltskin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Rumpelstiltskin-umbrella.h"; sourceTree = "<group>"; };
+		B01C20036FAFED9BF158A0175B9027AC /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BFDCA4A7B5C483B43AE7A9DC75B1B7DF /* Pods-Rumpelstiltskin_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Rumpelstiltskin_Tests-dummy.m"; sourceTree = "<group>"; };
 		C5998016687BE0AB6446AB8B8814099F /* Pods-Rumpelstiltskin_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Tests-Info.plist"; sourceTree = "<group>"; };
-		C8469309DF588DCF811FC6B2CD25C7B5 /* Rumpelstiltskin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Rumpelstiltskin-dummy.m"; sourceTree = "<group>"; };
 		D3716A3CA20EFDD28F0B4DA0AC6E2737 /* Pods-Rumpelstiltskin_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Rumpelstiltskin_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D4F469E92EDF87EF8D1F3822024D44AB /* Pods-Rumpelstiltskin_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Rumpelstiltskin_Example-umbrella.h"; sourceTree = "<group>"; };
+		E387588939040CCF836DACB372A2E962 /* Rumpelstiltskin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Rumpelstiltskin-Info.plist"; sourceTree = "<group>"; };
 		E9D4C2CE0F53722C0CFEAFAA63830601 /* Pods-Rumpelstiltskin_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Rumpelstiltskin_Example-frameworks.sh"; sourceTree = "<group>"; };
 		EBF24CF472DF9B7538DA24A25E7F86DA /* Pods-Rumpelstiltskin_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Rumpelstiltskin_Example.modulemap"; sourceTree = "<group>"; };
 		FA618D134D2BA71B41A89023908DEEBF /* Pods-Rumpelstiltskin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Rumpelstiltskin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		19AE43CF0998C77C801674F8DCDC4ADD /* Frameworks */ = {
+		455B12DA9EFA58D8853C2657D38DFEC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				910F706880EDFC2C1F82BCC2E4D4D72F /* Foundation.framework in Frameworks */,
+				B7515D56D5A3B4CB2CC42174A76142B4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20362175FF7ECA9435DD50C2F2500852 /* Frameworks */ = {
+		508A5634BB92A37406FE915F1355D5C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D5A8CCCC88E12FF5DB0016D58E067C /* Foundation.framework in Frameworks */,
+				F16D71CA2FEFC5FE9D617B5853D30EEB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2F2F49540B2B92EFF6E23C990B1E9C9 /* Frameworks */ = {
+		65B137B933BF79E1AB132EAF51087F16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E9CC4D25143E6506A357E62F9CA4419 /* Foundation.framework in Frameworks */,
+				32E72304BBB0A9607EA3D6A2DC2F12EC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0008066CF2D95CA07053C9A2AA3235BC /* Rumpelstiltskin */ = {
+		4677A9767C77847F7974CEA5F9408862 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF2C227DBBC568AD6677570C8851EE03 /* Pod */,
-				32E773C789EA78538D5C3FD211C96C8F /* Support Files */,
-				953BFA3D22CA980F00CC7F40 /* main.swift */,
-			);
-			name = Rumpelstiltskin;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		12457FB1AE3C64E0F7D70B36339B191A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0008066CF2D95CA07053C9A2AA3235BC /* Rumpelstiltskin */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		32E773C789EA78538D5C3FD211C96C8F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A1DA24A1D610C7C5B0706D71FD98B66B /* Rumpelstiltskin.modulemap */,
-				78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */,
-				C8469309DF588DCF811FC6B2CD25C7B5 /* Rumpelstiltskin-dummy.m */,
-				3B6BC0E5B314B07BFDB483F8FA303660 /* Rumpelstiltskin-Info.plist */,
-				6FAB31BE29F5A32F41CDDB4694D3B7A4 /* Rumpelstiltskin-prefix.pch */,
-				357F5BA2F4104995270A86BF5436D7BF /* Rumpelstiltskin-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Rumpelstiltskin";
-			sourceTree = "<group>";
-		};
-		67E9486FFAC75063B1172CAD5E560F0F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5C98DBD2CE1DC2117326B18EB665F592 /* Pods_Rumpelstiltskin_Example.framework */,
-				6C404FB4C57DA5191879D9262500A1DC /* Pods_Rumpelstiltskin_Tests.framework */,
-				22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin.framework */,
+				5C98DBD2CE1DC2117326B18EB665F592 /* Pods-Rumpelstiltskin_Example */,
+				6C404FB4C57DA5191879D9262500A1DC /* Pods-Rumpelstiltskin_Tests */,
+				22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		82EEF5006C06C647D1D76D80AAEAF644 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				17AE2D49DF296B781752213309D42F78 /* LICENSE */,
+				10669C38CC5977617B4389E72E1FE09A /* README.md */,
+				3E8EA0F76EF90CB2F192AF3548E0A267 /* Rumpelstiltskin.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		87F0951F8B74436D03E829790039AA9F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A27C5B5E9F442A620CA48392CB369C /* Rumpelstiltskin */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		9DC0DCC0BA5C8944C59E01AFAB555F7F /* Targets Support Files */ = {
@@ -151,21 +145,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		A6AA1C8C9C6556CEC0F4FC71CA4F16D6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				A1CC625A91AE7C7867022BB901F00203 /* Rumpelstiltskin.modulemap */,
+				6D10A99CCDA55AB38750782744AD2E1D /* Rumpelstiltskin-dummy.m */,
+				E387588939040CCF836DACB372A2E962 /* Rumpelstiltskin-Info.plist */,
+				5A905BBE1C06944DD830C1C359890C18 /* Rumpelstiltskin-prefix.pch */,
+				A1F3A2884E5A744D5B5B9997A582452A /* Rumpelstiltskin-umbrella.h */,
+				0FB77AC8B0625D64BC91DF9DB76F6698 /* Rumpelstiltskin.debug.xcconfig */,
+				371C448E25B54D1B1D219A7E0EE8F7D7 /* Rumpelstiltskin.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Cocoapods/Pods/Target Support Files/Rumpelstiltskin";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				12457FB1AE3C64E0F7D70B36339B191A /* Development Pods */,
+				87F0951F8B74436D03E829790039AA9F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				67E9486FFAC75063B1172CAD5E560F0F /* Products */,
+				4677A9767C77847F7974CEA5F9408862 /* Products */,
 				9DC0DCC0BA5C8944C59E01AFAB555F7F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -173,19 +174,9 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF2C227DBBC568AD6677570C8851EE03 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4FDBBA63CF2504EAEDDD22A8A7225ACD /* LICENSE */,
-				53B754AA7E8678E888C175C9F04DDE89 /* README.md */,
-				AFF1B41828257B5DA2D5D00E32A45ED3 /* Rumpelstiltskin.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		DF815C4D8995FF9254A6D4603BBECC65 /* Pods-Rumpelstiltskin_Example */ = {
@@ -203,6 +194,17 @@
 			);
 			name = "Pods-Rumpelstiltskin_Example";
 			path = "Target Support Files/Pods-Rumpelstiltskin_Example";
+			sourceTree = "<group>";
+		};
+		E9A27C5B5E9F442A620CA48392CB369C /* Rumpelstiltskin */ = {
+			isa = PBXGroup;
+			children = (
+				B01C20036FAFED9BF158A0175B9027AC /* main.swift */,
+				82EEF5006C06C647D1D76D80AAEAF644 /* Pod */,
+				A6AA1C8C9C6556CEC0F4FC71CA4F16D6 /* Support Files */,
+			);
+			name = Rumpelstiltskin;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		EDB60C0E610A5F290DE8FB1839CC631D /* Pods-Rumpelstiltskin_Tests */ = {
@@ -224,27 +226,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		37C5AD75B788402C625F7A2C1DA5F7A1 /* Headers */ = {
+		82BAC8E2B0CDAEBE5699751A065455EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3FF0AEA3D2B10C8EBA47DD75B56B39 /* Pods-Rumpelstiltskin_Example-umbrella.h in Headers */,
+				C07B1E93C8E70012EEB4AFD327CC7334 /* Rumpelstiltskin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		55DD697FA04CD7FBA5F00D2C8869A5A8 /* Headers */ = {
+		E0AB857D152BAFEBBCB38B69328340FB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74AF3ECE6B33AC98BC21D0D2D1550F57 /* Rumpelstiltskin-umbrella.h in Headers */,
+				99467C95DAF78E9B00A34E9BE98135EA /* Pods-Rumpelstiltskin_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7CF20AF87213839934365A4268F93B5 /* Headers */ = {
+		FC1D82E8740BC990F40E8C87E4D1901C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9CB5F3BB24A0E0C8BB629D9D7E5531B /* Pods-Rumpelstiltskin_Tests-umbrella.h in Headers */,
+				A92619A043BB00FDE40A3E5668B7E4A9 /* Pods-Rumpelstiltskin_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,50 +255,50 @@
 /* Begin PBXNativeTarget section */
 		036066AC07DB9A45559C7D97533397D8 /* Pods-Rumpelstiltskin_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC092B94D2B08AE784F70246091087C1 /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Tests" */;
+			buildConfigurationList = BE9CBF14AEF26DAB881E519708B63A96 /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Tests" */;
 			buildPhases = (
-				C7CF20AF87213839934365A4268F93B5 /* Headers */,
-				AFA24C3BF713ED09613161DDC80D4308 /* Sources */,
-				20362175FF7ECA9435DD50C2F2500852 /* Frameworks */,
-				AF548BF0CDC67A73554C8446894A14AA /* Resources */,
+				E0AB857D152BAFEBBCB38B69328340FB /* Headers */,
+				17AB2236767ADC6FE864B2608B44DC41 /* Sources */,
+				65B137B933BF79E1AB132EAF51087F16 /* Frameworks */,
+				4827F806906783A1C3AB578F07F7ABDA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6C8CFDC5C664AD1B8A5EA81BE58111C5 /* PBXTargetDependency */,
+				BB2646EF17D885FE0BE1642251FF7072 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rumpelstiltskin_Tests";
-			productName = "Pods-Rumpelstiltskin_Tests";
-			productReference = 6C404FB4C57DA5191879D9262500A1DC /* Pods_Rumpelstiltskin_Tests.framework */;
+			productName = Pods_Rumpelstiltskin_Tests;
+			productReference = 6C404FB4C57DA5191879D9262500A1DC /* Pods-Rumpelstiltskin_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		3B67208D8F3F636798FD09115F70FC6E /* Pods-Rumpelstiltskin_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16C30E8D376264836D87236F64FEEF2B /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Example" */;
+			buildConfigurationList = 29A17DC4474B71FF3B7200BE30098E9B /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Example" */;
 			buildPhases = (
-				37C5AD75B788402C625F7A2C1DA5F7A1 /* Headers */,
-				5E82BE19AE9A63C48B219DB1508DFA57 /* Sources */,
-				E2F2F49540B2B92EFF6E23C990B1E9C9 /* Frameworks */,
-				0D9E9E6B75D56B419D898920CA1E1C94 /* Resources */,
+				FC1D82E8740BC990F40E8C87E4D1901C /* Headers */,
+				430210B7A420D748658F2937319551FE /* Sources */,
+				455B12DA9EFA58D8853C2657D38DFEC1 /* Frameworks */,
+				1C156E7CD7CDD9BA8C2BEFE2D05C3AAA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7238FDD2265A2A8CF3C1D7BBEEB62DE8 /* PBXTargetDependency */,
+				43D65607FEC07751081F9D8472340E35 /* PBXTargetDependency */,
 			);
 			name = "Pods-Rumpelstiltskin_Example";
-			productName = "Pods-Rumpelstiltskin_Example";
-			productReference = 5C98DBD2CE1DC2117326B18EB665F592 /* Pods_Rumpelstiltskin_Example.framework */;
+			productName = Pods_Rumpelstiltskin_Example;
+			productReference = 5C98DBD2CE1DC2117326B18EB665F592 /* Pods-Rumpelstiltskin_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		8D678D18FB446A9CFD553723A3D57013 /* Rumpelstiltskin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36A7E2A229FD35C8FDBCFC8395983141 /* Build configuration list for PBXNativeTarget "Rumpelstiltskin" */;
+			buildConfigurationList = 91B369841BE6A4CD0D077870601EF26A /* Build configuration list for PBXNativeTarget "Rumpelstiltskin" */;
 			buildPhases = (
-				55DD697FA04CD7FBA5F00D2C8869A5A8 /* Headers */,
-				79AF0EE621A91DDC4C54EB7F3A64E77A /* Sources */,
-				19AE43CF0998C77C801674F8DCDC4ADD /* Frameworks */,
-				125E476A41BCDC34F82CE5A6A5195ECC /* Resources */,
+				82BAC8E2B0CDAEBE5699751A065455EF /* Headers */,
+				53B813B2BCDC0D7ABA4E336534C9033D /* Sources */,
+				508A5634BB92A37406FE915F1355D5C4 /* Frameworks */,
+				6E28F7D4C7B61005D951FACAC3681ED5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -304,7 +306,7 @@
 			);
 			name = Rumpelstiltskin;
 			productName = Rumpelstiltskin;
-			productReference = 22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin.framework */;
+			productReference = 22318D178D6E979CF8DEFD550C2A01EB /* Rumpelstiltskin */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -313,26 +315,20 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					3B67208D8F3F636798FD09115F70FC6E = {
-						LastSwiftMigration = 1020;
-					};
-					8D678D18FB446A9CFD553723A3D57013 = {
-						LastSwiftMigration = 1020;
-					};
-				};
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				Base,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 67E9486FFAC75063B1172CAD5E560F0F /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			productRefGroup = 4677A9767C77847F7974CEA5F9408862 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -344,21 +340,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0D9E9E6B75D56B419D898920CA1E1C94 /* Resources */ = {
+		1C156E7CD7CDD9BA8C2BEFE2D05C3AAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		125E476A41BCDC34F82CE5A6A5195ECC /* Resources */ = {
+		4827F806906783A1C3AB578F07F7ABDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF548BF0CDC67A73554C8446894A14AA /* Resources */ = {
+		6E28F7D4C7B61005D951FACAC3681ED5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,56 +364,53 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5E82BE19AE9A63C48B219DB1508DFA57 /* Sources */ = {
+		17AB2236767ADC6FE864B2608B44DC41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2862F56EC6FD05B127C574A968BE963 /* Pods-Rumpelstiltskin_Example-dummy.m in Sources */,
+				EF2B03F147F6C80E4A2C11E3D10F4D61 /* Pods-Rumpelstiltskin_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79AF0EE621A91DDC4C54EB7F3A64E77A /* Sources */ = {
+		430210B7A420D748658F2937319551FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECCA8EA9040C5E917D3AC4D0818D4FAD /* Rumpelstiltskin-dummy.m in Sources */,
-				953BFA3E22CA980F00CC7F40 /* main.swift in Sources */,
+				A0E51630A7509EA88D0B77262E648435 /* Pods-Rumpelstiltskin_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFA24C3BF713ED09613161DDC80D4308 /* Sources */ = {
+		53B813B2BCDC0D7ABA4E336534C9033D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF46A18AD486E69BE7C37E0ABC8D127B /* Pods-Rumpelstiltskin_Tests-dummy.m in Sources */,
+				640D77789AEE89A0DDD0C97409D5C36D /* main.swift in Sources */,
+				76728D9821EBE5E11A34FC1211CAFEE9 /* Rumpelstiltskin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6C8CFDC5C664AD1B8A5EA81BE58111C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Rumpelstiltskin_Example";
-			target = 3B67208D8F3F636798FD09115F70FC6E /* Pods-Rumpelstiltskin_Example */;
-			targetProxy = 862ECC22F838CF31F084DAD3F4C30772 /* PBXContainerItemProxy */;
-		};
-		7238FDD2265A2A8CF3C1D7BBEEB62DE8 /* PBXTargetDependency */ = {
+		43D65607FEC07751081F9D8472340E35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Rumpelstiltskin;
 			target = 8D678D18FB446A9CFD553723A3D57013 /* Rumpelstiltskin */;
-			targetProxy = 1B700AFA4F8A7CD29B8A04E90C222B6F /* PBXContainerItemProxy */;
+			targetProxy = 50D0885F07598DC45547A070A6C528C8 /* PBXContainerItemProxy */;
+		};
+		BB2646EF17D885FE0BE1642251FF7072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Rumpelstiltskin_Example";
+			target = 3B67208D8F3F636798FD09115F70FC6E /* Pods-Rumpelstiltskin_Example */;
+			targetProxy = 5C22DEA53A7007845631B60B2AF1D208 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07E5C33AC12F5256D97A82B41CA4B7D0 /* Debug */ = {
+		03FC4D81546B5162E15B7DD6DC4391E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA618D134D2BA71B41A89023908DEEBF /* Pods-Rumpelstiltskin_Example.debug.xcconfig */;
+			baseConfigurationReference = 371C448E25B54D1B1D219A7E0EE8F7D7 /* Rumpelstiltskin.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -426,20 +419,48 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin.modulemap";
+				PRODUCT_MODULE_NAME = Rumpelstiltskin;
+				PRODUCT_NAME = Rumpelstiltskin;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		06A817BB7EA67806BA23A1FABA7625C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FB77AC8B0625D64BC91DF9DB76F6698 /* Rumpelstiltskin.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin.modulemap";
+				PRODUCT_MODULE_NAME = Rumpelstiltskin;
+				PRODUCT_NAME = Rumpelstiltskin;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -447,12 +468,11 @@
 			};
 			name = Debug;
 		};
-		0977035C9CB1D5AE7CE4BBEC71B7395F /* Debug */ = {
+		3E64F8A27538602EA794249626396371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E227986B78678AFECE0DB2B99B67212 /* Pods-Rumpelstiltskin_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -480,78 +500,11 @@
 			};
 			name = Debug;
 		};
-		201BB33C7CDBF5296DAF5B1012C0FAE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8874177BB31FFBEDCA4E073365F18754 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin.modulemap";
-				PRODUCT_MODULE_NAME = Rumpelstiltskin;
-				PRODUCT_NAME = Rumpelstiltskin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		431BA2B8298F0EE71735B9E0114E1955 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -574,6 +527,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -601,16 +555,83 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		5C85E4166193E78FE2E6A2CF3331DFAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3C80664FD874A4C0151F721477D01F /* Pods-Rumpelstiltskin_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		727C6521869410EE2F37AC00A568352E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA618D134D2BA71B41A89023908DEEBF /* Pods-Rumpelstiltskin_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79759604D78320E712558F49DF19AA9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -633,6 +654,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -671,12 +693,11 @@
 			};
 			name = Debug;
 		};
-		B9892FD8CBBDEBCC4641B115B9A7112F /* Release */ = {
+		7B4E97FEF7BE4D0CF66F6D87B479B6EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F3C80664FD874A4C0151F721477D01F /* Pods-Rumpelstiltskin_Tests.release.xcconfig */;
+			baseConfigurationReference = B71C94D838416403C4C78684FC21CAD9 /* Pods-Rumpelstiltskin_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -685,12 +706,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -705,54 +726,14 @@
 			};
 			name = Release;
 		};
-		D86CFB75B9CEE76518CABBDF7728C159 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78CC01DA0149F04E18C31D07E392F89B /* Rumpelstiltskin.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Rumpelstiltskin/Rumpelstiltskin.modulemap";
-				PRODUCT_MODULE_NAME = Rumpelstiltskin;
-				PRODUCT_NAME = Rumpelstiltskin;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16C30E8D376264836D87236F64FEEF2B /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Example" */ = {
+		29A17DC4474B71FF3B7200BE30098E9B /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				07E5C33AC12F5256D97A82B41CA4B7D0 /* Debug */,
-				201BB33C7CDBF5296DAF5B1012C0FAE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36A7E2A229FD35C8FDBCFC8395983141 /* Build configuration list for PBXNativeTarget "Rumpelstiltskin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D86CFB75B9CEE76518CABBDF7728C159 /* Debug */,
-				8874177BB31FFBEDCA4E073365F18754 /* Release */,
+				727C6521869410EE2F37AC00A568352E /* Debug */,
+				7B4E97FEF7BE4D0CF66F6D87B479B6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -760,17 +741,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				79759604D78320E712558F49DF19AA9F /* Debug */,
+				431BA2B8298F0EE71735B9E0114E1955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC092B94D2B08AE784F70246091087C1 /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Tests" */ = {
+		91B369841BE6A4CD0D077870601EF26A /* Build configuration list for PBXNativeTarget "Rumpelstiltskin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0977035C9CB1D5AE7CE4BBEC71B7395F /* Debug */,
-				B9892FD8CBBDEBCC4641B115B9A7112F /* Release */,
+				06A817BB7EA67806BA23A1FABA7625C0 /* Debug */,
+				03FC4D81546B5162E15B7DD6DC4391E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE9CBF14AEF26DAB881E519708B63A96 /* Build configuration list for PBXNativeTarget "Pods-Rumpelstiltskin_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E64F8A27538602EA794249626396371 /* Debug */,
+				5C85E4166193E78FE2E6A2CF3331DFAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

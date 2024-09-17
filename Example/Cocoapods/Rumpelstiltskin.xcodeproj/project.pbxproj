@@ -33,7 +33,6 @@
 /* Begin PBXFileReference section */
 		09AF223C57B1568D9A9E4DD6 /* Pods-Rumpelstiltskin_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumpelstiltskin_Example.debug.xcconfig"; path = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0F324B4F7B2E082988DBEEBA /* Pods_Rumpelstiltskin_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F90DC123FBE16299EAD0CDF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		462580F78175D4705C78BFA4 /* Pods-Rumpelstiltskin_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumpelstiltskin_Tests.release.xcconfig"; path = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		514F85D04ADC76D2D3F6FC80 /* Pods-Rumpelstiltskin_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumpelstiltskin_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Rumpelstiltskin_Tests/Pods-Rumpelstiltskin_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Rumpelstiltskin_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rumpelstiltskin_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +47,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		842486E9823D3D135E7E03FD /* Pods-Rumpelstiltskin_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rumpelstiltskin_Example.release.xcconfig"; path = "Target Support Files/Pods-Rumpelstiltskin_Example/Pods-Rumpelstiltskin_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8922D44248DF72F95DB858DA /* Pods_Rumpelstiltskin_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rumpelstiltskin_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E3864EBB9464F081BB49F5E /* Rumpelstiltskin.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Rumpelstiltskin.podspec; path = ../Rumpelstiltskin.podspec; sourceTree = "<group>"; };
 		9538FCB222CE4813009AA948 /* Strings.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Strings.txt; sourceTree = "<group>"; };
 		9568F3392367329900682509 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9568F33C2367354100682509 /* Localizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
-		A25CDD13FC6ED7CAAD96256E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +95,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Rumpelstiltskin */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -158,16 +154,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				8E3864EBB9464F081BB49F5E /* Rumpelstiltskin.podspec */,
-				A25CDD13FC6ED7CAAD96256E /* README.md */,
-				3F90DC123FBE16299EAD0CDF /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,8 +161,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Rumpelstiltskin_Example" */;
 			buildPhases = (
-				9568F33B2367332100682509 /* ShellScript */,
 				24208693E18FA4C5E30679C5 /* [CP] Check Pods Manifest.lock */,
+				9568F33B2367332100682509 /* ShellScript */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
@@ -222,12 +208,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 33ER9P7CN4;
+						DevelopmentTeam = 4TM9NALPC3;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4TM9NALPC3;
 						LastSwiftMigration = 1020;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -331,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n# Get path to Generator script\nGENERATOR_PATH=\"${PROJECT_DIR}/../main.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Base.lproj/Localizable.strings\"\n\nOUTPUT_PATH=\"$BASE_PATH/Localizations.swift\"\n\n# Add permission to generator for script execution\nchmod 755 \"$GENERATOR_PATH\"\n\n\"$GENERATOR_PATH\" \"$SOURCE_PATH\" \"$OUTPUT_PATH\"\n";
+			shellScript = "# Get base path to project\nBASE_PATH=\"$PROJECT_DIR/$PROJECT_NAME\"\n\n# Get path to Generator script\nGENERATOR_PATH=\"${PROJECT_DIR}/../../main.swift\"\n\n# Get path to main localization file (usually english).\nSOURCE_PATH=\"$BASE_PATH/Base.lproj/Localizable.strings\"\n\nOUTPUT_PATH=\"$BASE_PATH/Localizations.swift\"\n\n# Add permission to generator for script execution\nchmod 755 \"$GENERATOR_PATH\"\n\n\"$GENERATOR_PATH\" \"$SOURCE_PATH\" \"$OUTPUT_PATH\"\n";
 		};
 		C1FA72A581915DC825600824 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -518,8 +505,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33ER9P7CN4;
+				DEVELOPMENT_TEAM = 4TM9NALPC3;
 				INFOPLIST_FILE = Rumpelstiltskin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -536,8 +524,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 33ER9P7CN4;
+				DEVELOPMENT_TEAM = 4TM9NALPC3;
 				INFOPLIST_FILE = Rumpelstiltskin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -551,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 514F85D04ADC76D2D3F6FC80 /* Pods-Rumpelstiltskin_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4TM9NALPC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -560,6 +550,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,11 +563,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 462580F78175D4705C78BFA4 /* Pods-Rumpelstiltskin_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4TM9NALPC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,22 +1,24 @@
 {
   "name": "Rumpelstiltskin",
-  "version": "0.1.0",
-  "summary": "A short description of Rumpelstiltskin.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Christian Braun/Rumpelstiltskin",
+  "version": "0.2.0",
+  "summary": "Converting Localizable.strings file int a Swift struct",
+  "description": "This pod is used to replace the Laurene localization generator which does not work with Swift 5 anymore.\nWe only support a smal feature set of the original generator but it should be enough for the most common cases.",
+  "homepage": "https://github.com/kurzdigital/Rumpelstiltskin",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Christian Braun": "braun.christian.bamberg@gmail.com"
+    "KURZ Digital Solutions": "ios@kurzdigital.com"
   },
   "source": {
-    "git": "https://github.com/Christian Braun/Rumpelstiltskin.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/kurzdigital/Rumpelstiltskin.git",
+    "tag": "0.2.0"
   },
+  "swift_versions": "5.0",
+  "source_files": "main.swift",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "Rumpelstiltskin/Classes/**/*"
+  "swift_version": "5.0"
 }

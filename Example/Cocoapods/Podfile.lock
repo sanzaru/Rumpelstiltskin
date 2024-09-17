@@ -1,16 +1,16 @@
 PODS:
-  - Rumpelstiltskin (0.1.0)
+  - Rumpelstiltskin (0.2.0)
 
 DEPENDENCIES:
-  - Rumpelstiltskin (from `../`)
+  - Rumpelstiltskin (from `../../`)
 
 EXTERNAL SOURCES:
   Rumpelstiltskin:
-    :path: "../"
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  Rumpelstiltskin: e463355e26f2024783222ae8c98f6b56da4ec5bd
+  Rumpelstiltskin: 5ccfd178181cc189ae3b6bd1de13b69dee212b60
 
-PODFILE CHECKSUM: ebd30d5f9fa268e588498d9a6fea8ecf62d2c6aa
+PODFILE CHECKSUM: c3e1346af41f0bd8716fc44aa0577261ba78c7a8
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.15.2

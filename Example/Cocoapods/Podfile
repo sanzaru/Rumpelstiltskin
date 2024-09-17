@@ -2,7 +2,7 @@ platform :ios, '9.3'
 use_frameworks!
 
 target 'Rumpelstiltskin_Example' do
-  pod 'Rumpelstiltskin', :path => '../'
+  pod 'Rumpelstiltskin', :path => '../../'
 
   target 'Rumpelstiltskin_Tests' do
     inherit! :search_paths

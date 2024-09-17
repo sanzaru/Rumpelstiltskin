@@ -37,7 +37,6 @@ It is built to be a drop in replacement for the [Laurine - Storyboard Generator 
 
 ## Currently not supported
 * Multiline strings: Please use `\n` to format your strings within your `Localizable.strings` file
-* Localizations for SPM packages. Currenty, only XCode projects can be localized.
 
 ## Installation
 

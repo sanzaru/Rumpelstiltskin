@@ -13,7 +13,7 @@ let expectedResult = """
 
 import Foundation
 
-struct Localizations {
+public struct Localizations {
 struct ErrorMessages {
 /// Base translation: Fields empty. Please fill out all required fields.
 public static let EmptyCredentials = NSLocalizedString("ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
@@ -44,7 +44,7 @@ let expectedResultComplicatedData = """
 
 import Foundation
 
-struct Localizations {
+public struct Localizations {
 struct ErrorMessages {
 /// Base translation: Fields empty. Please fill out all required fields.
 public static let EmptyCredentials = NSLocalizedString("ErrorMessages.EmptyCredentials", tableName: nil, bundle: Bundle.main, value: "", comment: "")
